@@ -1,0 +1,14 @@
+# Glossary
+
+reference
+
+| Termo | Definição | Fonte |
+|----|----|----|
+| DUIS | DCC User Interface Specification | [DUIS](documents/dcc-user-interface.llms.md) |
+| SMKI | Smart Meter Key Infrastructure | [SMKI](concepts/smki.llms.md) |
+| DCC Alert | Alerta gerado no DCC Total System (exceto Device Alert) enviado a Users relevantes | [DUIS](documents/dcc-user-interface.llms.md) |
+| Device Alert | Comunicação contendo um Alert (definido pela GBCS) gerado por um Device, ou um SMETS1 Alert | [DUIS](documents/dcc-user-interface.llms.md) |
+| Command Variant | Valor de um Common Object que indica como o DCC deve tratar a mensagem | [Mensagens DUIS](concepts/duis-messaging.llms.md) |
+| Common Object | Item ou grupo de dados comum a Service Requests, Signed Pre-Commands, Service Responses, DCC/Device Alerts | [Mensagens DUIS](concepts/duis-messaging.llms.md) |
+| GBCS | Great Britain Companion Specification | [DUIS](documents/dcc-user-interface.llms.md) |
+| CPL | Central Products List | [DUIS](documents/dcc-user-interface.llms.md) |

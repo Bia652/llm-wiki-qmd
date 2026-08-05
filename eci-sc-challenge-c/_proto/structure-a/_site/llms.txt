@@ -1,0 +1,19 @@
+# SEC Knowledge Wiki — Prototype A (por tipo de conteúdo)
+
+> Protótipo Eixo 3 Opção 1: documents/ + concepts/ + glossary.qmd
+
+## Pages
+
+- [SEC Knowledge Wiki — Prototype A](index.llms.md)
+- [SMKI Repository Code of Connection](documents/smki-repository-coc.llms.md)
+- [SMKI Interface Design Specification — Nota Complementar (sintético, para teste)](documents/smki-interface-design-addendum.llms.md)
+- [Documents](documents/index.llms.md)
+- [DCC User Interface Specification (DUIS)](documents/dcc-user-interface.llms.md)
+- [Tempo estimado até emissão de certificado SMKI (dado sintético, para teste)](concepts/smki-response-time-inference.llms.md)
+- [Mensagens DUIS (Service Requests / Responses)](concepts/duis-messaging.llms.md)
+- [Concepts](concepts/index.llms.md)
+- [SMKI (Smart Meter Key Infrastructure)](concepts/smki.llms.md)
+- [GB Companion Specification (GBCS)](documents/gb-companion.llms.md)
+- [SMKI Code of Connection](documents/smki-coc.llms.md)
+- [SMKI Interface Design Specification](documents/smki-interface-design.llms.md)
+- [Glossary](glossary.llms.md)

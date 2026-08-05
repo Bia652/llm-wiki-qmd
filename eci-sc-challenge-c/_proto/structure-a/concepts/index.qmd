@@ -1,0 +1,11 @@
+---
+title: "Concepts"
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, status, confidence-score, categories, related]
+  sort: "title"
+---
+
+Páginas de síntese cross-documento: cada conceito agrega o que os vários PDFs
+dizem sobre ele, em vez de ficar espalhado por várias páginas `documents/`.

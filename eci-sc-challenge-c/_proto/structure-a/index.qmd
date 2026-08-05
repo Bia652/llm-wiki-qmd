@@ -1,0 +1,16 @@
+---
+title: "SEC Knowledge Wiki — Prototype A"
+listing:
+  contents:
+    - documents
+    - concepts
+  type: table
+  fields: [title, type, categories]
+  sort: "title"
+---
+
+Protótipo de estrutura Quarto **por tipo de conteúdo** (Eixo 3, Opção 1), com
+granularidade híbrida (Eixo 2, Opção C): uma página `documents/` por PDF de
+origem e páginas `concepts/` que sintetizam conhecimento cross-documento.
+
+Corpus atual (1 PDF ingerido): DCC User Interface Specification (DUIS) v5.4.

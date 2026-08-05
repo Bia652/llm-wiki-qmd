@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/documents/dcc-user-interface.html",
+      "/documents/index.html",
+      "/documents/gb-companion.html",
+      "/documents/smki-coc.html",
+      "/documents/smki-interface-design.html",
+      "/documents/smki-repository-coc.html"
+    ]
+  },
+  {
+    "listing": "/documents/index.html",
+    "items": [
+      "/documents/dcc-user-interface.html",
+      "/documents/gb-companion.html",
+      "/documents/smki-coc.html",
+      "/documents/smki-interface-design.html",
+      "/documents/smki-repository-coc.html"
+    ]
+  }
+]

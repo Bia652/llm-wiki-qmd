@@ -1,0 +1,13 @@
+# SEC Knowledge Wiki — Prototype C (1 página por PDF, sem conceitos)
+
+> Baseline Eixo 2 Opção A: 1 .qmd por PDF, sem camada de conceitos cross-documento
+
+## Pages
+
+- [SEC Knowledge Wiki — Prototype C](index.llms.md)
+- [SMKI Interface Design Specification](documents/smki-interface-design.llms.md)
+- [Documents](documents/index.llms.md)
+- [DCC User Interface Specification (DUIS)](documents/dcc-user-interface.llms.md)
+- [GB Companion Specification (GBCS)](documents/gb-companion.llms.md)
+- [SMKI Code of Connection](documents/smki-coc.llms.md)
+- [SMKI Repository Code of Connection](documents/smki-repository-coc.llms.md)

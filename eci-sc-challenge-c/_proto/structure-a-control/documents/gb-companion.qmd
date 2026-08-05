@@ -1,0 +1,29 @@
+---
+title: "GB Companion Specification (GBCS)"
+type: document
+source-pdf: "../../../pdfs/SEC-Schedule-8-GB-Companion-Specification-v4.4 1.pdf"
+source-version: "v4.4"
+categories: [devices, messaging, certification]
+last-ingested: 2026-07-24
+---
+
+## Propósito
+
+A Great Britain Companion Specification (GBCS) define os requisitos que os Dispositivos
+(GSME, ESME, Communications Hubs, HCALCS, PPMID, IHD, SAPC) têm de cumprir, tal como exigido
+pelas respetivas especificações técnicas (GSMETS, ESMETS, CHTS, HCALCSTS, PPMIDTS, IHDTS,
+SAPCTS). Cada tipo de Dispositivo tem de ser certificado pelo NCSC como compatível com a
+característica de segurança "Commercial Product Assurance" relevante.
+
+## Estrutura do documento
+
+Documento extenso (>20 secções), misturando secções normativas e informativas. Termos
+definidos (capitalizados) remetem para o Glossário (Secção 21); estruturas em `courier new`
+são especificadas em ASN.1.
+
+Nota: este documento **não** faz referência a SMKI — o seu âmbito é o formato de mensagens e
+certificação de Dispositivos (GBCS), não a infraestrutura de chaves.
+
+## Fonte
+
+PDF original: [SEC-Schedule-8-GB-Companion-Specification-v4.4](../../../pdfs/SEC-Schedule-8-GB-Companion-Specification-v4.4%201.pdf)

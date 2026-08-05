@@ -1,0 +1,59 @@
+---
+title: "SMKI (Smart Meter Key Infrastructure)"
+type: concept
+categories: [security, pki]
+related: [documents/dcc-user-interface.qmd, documents/smki-interface-design.qmd, documents/smki-coc.qmd, documents/smki-repository-coc.qmd]
+last-ingested: 2026-07-24
+---
+
+A **Smart Meter Key Infrastructure (SMKI)** é a infraestrutura de chave
+pública (PKI) que certifica as chaves usadas para assinar digitalmente as
+comunicações no ecossistema SEC.
+
+## Uso na DUIS
+
+Segundo a [DCC User Interface Specification](../documents/dcc-user-interface.qmd)
+(cláusula 3.3, Key Cryptographic Operations), todas as mensagens DUIS XML
+trocadas entre Users e a DCC são assinadas com ECDSA sobre a curva P-256,
+usando chaves públicas certificadas ao abrigo da SMKI. Existem três tipos de
+chave privada distintos, cada um dedicado a um propósito:
+
+| Chave | Usada por | Propósito |
+|---|---|---|
+| XML User Role Signing Private Key | User | Assinar Service Requests e Signed Pre-Commands |
+| DCC Transform Private Key | DCC | Assinar Service Responses com Pre-Commands |
+| DCC Access Control Broker Private Key | DCC | Assinar DCC Alerts e outras Service Responses |
+
+## Emissão de certificados (SMKI Interface Design Specification)
+
+Segundo a [SMKI Interface Design Specification](../documents/smki-interface-design.qmd)
+(Secção L4), a DCC mantém o SMKI Service Interface através de três canais de
+submissão de Certificate Signing Requests (CSR), que resultam na emissão dos
+certificados usados pelas chaves acima:
+
+| Interface | Tipo de CSR |
+|---|---|
+| SMKI Portal (via DCC Gateway Connection) | Organisation CSR e Device CSR (Ad Hoc ou Batched) |
+| Ad Hoc Device CSR Web Service | Device CSR (ad hoc) |
+| Batched Device CSR Web Service | Device CSR (batched) |
+
+## Ligação aos SMKI Services (SMKI Code of Connection)
+
+Segundo o [SMKI Code of Connection](../documents/smki-coc.qmd) (Secção L4.5), só pessoas com o
+estatuto de Authorised Responsible Officer (ARO), com credenciais IKI emitidas conforme o SMKI
+RAPP, podem aceder aos SMKI Services em nome da sua organização — a ligação é feita
+preferencialmente via DCC Gateway Connection.
+
+## Acesso ao SMKI Repository (SMKI Repository Code of Connection)
+
+Segundo o [SMKI Repository Code of Connection](../documents/smki-repository-coc.qmd) (Secção
+L6.5), os certificados e outra informação emitida ao abrigo da SMKI ficam depositados no SMKI
+Repository, acessível via DCC Gateway Connection (com credenciais próprias) ou, para quem não
+tem Gateway Connection, via Service Desk ou pelo SMKI Portal na Internet.
+
+## Fontes
+
+- [DCC User Interface Specification](../documents/dcc-user-interface.qmd) — cláusula 3.3 (uso das chaves)
+- [SMKI Interface Design Specification](../documents/smki-interface-design.qmd) — Secção L4 (emissão de certificados)
+- [SMKI Code of Connection](../documents/smki-coc.qmd) — Secção L4.5 (ligação e autenticação)
+- [SMKI Repository Code of Connection](../documents/smki-repository-coc.qmd) — Secção L6.5 (acesso ao repositório)

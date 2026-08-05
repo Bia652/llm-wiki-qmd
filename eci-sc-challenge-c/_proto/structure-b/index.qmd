@@ -1,0 +1,20 @@
+---
+title: "SEC Knowledge Wiki — Prototype B"
+listing:
+  contents:
+    - dcc-user-interface
+    - smki-interface-design
+    - smki-coc
+    - smki-repository-coc
+    - gb-companion
+  type: table
+  fields: [title, type, categories]
+  sort: "title"
+---
+
+Protótipo de estrutura Quarto **por documento de origem** (Eixo 3, Opção 2):
+uma pasta por PDF, contendo `overview.qmd` (metadata + resumo) e
+`concepts.qmd` (todos os conceitos extraídos desse PDF, sem camada de
+síntese cross-documento separada).
+
+Corpus atual (1 PDF ingerido): DCC User Interface Specification (DUIS) v5.4.

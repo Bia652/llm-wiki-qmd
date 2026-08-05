@@ -1,0 +1,11 @@
+---
+title: "Documents"
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, source-version, categories]
+  sort: "title"
+---
+
+Uma página por PDF, sem separação entre "documento" e "conceito" — cada
+página contém tudo o que foi extraído desse PDF.

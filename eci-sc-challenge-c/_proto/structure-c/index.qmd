@@ -1,0 +1,16 @@
+---
+title: "SEC Knowledge Wiki — Prototype C"
+listing:
+  contents:
+    - documents
+  type: table
+  fields: [title, source-version, categories]
+  sort: "title"
+---
+
+Protótipo **baseline** (Eixo 2, Opção A): 1 página `.qmd` por PDF, sem
+glossário nem páginas de conceito separadas. Tudo o que uma página tem a
+dizer sobre um termo (ex. SMKI) fica inline, dentro da própria página do
+documento.
+
+Corpus atual (1 PDF ingerido): DCC User Interface Specification (DUIS) v5.4.

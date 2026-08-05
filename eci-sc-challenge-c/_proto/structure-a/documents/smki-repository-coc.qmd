@@ -1,0 +1,38 @@
+---
+title: "SMKI Repository Code of Connection"
+type: document
+source-pdf: "../../../pdfs/SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0.pdf"
+source-version: "v3.0"
+categories: [security, pki, interface]
+related: [concepts/smki.qmd]
+last-ingested: 2026-07-24
+status: verified
+confidence-score: 0.95
+supersedes: []
+last-verified: 2026-07-24
+---
+
+## Propósito
+
+Este é o documento SMKI Repository Code of Connection, exigido pela Secção L6.5 do SEC.
+
+## Estrutura do documento
+
+1. Connection Mechanism (acesso à interface, Browser Policy, submissão de informação ao
+   SMKI Repository)
+2. SMKI Repository interfaces (acesso ao conteúdo do SMKI Repository sem DCC Gateway Connection)
+3. Authentication
+4. Managing Demand (respostas de erro)
+
+## Acesso ao SMKI Repository
+
+Users com DCC Gateway Connection ligam-se às interfaces do SMKI Repository via essa ligação,
+com credenciais próprias de autenticação. Users sem DCC Gateway Connection podem aceder ao
+conteúdo do Repository via Service Desk (visita, email, carta, telefone) ou via Internet através
+do SMKI Portal.
+
+Ver [SMKI](../concepts/smki.qmd) para a síntese cross-documento deste conceito.
+
+## Fonte
+
+PDF original: [SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0](../../../pdfs/SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0.pdf)

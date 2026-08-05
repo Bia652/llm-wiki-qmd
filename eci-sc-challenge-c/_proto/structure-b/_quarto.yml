@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SEC Knowledge Wiki — Prototype B (por documento de origem)"
+  description: "Protótipo Eixo 3 Opção 2: pasta por PDF com overview.qmd + concepts.qmd"
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "DCC User Interface"
+        contents:
+          auto: "dcc-user-interface"
+      - section: "SMKI Interface Design"
+        contents:
+          auto: "smki-interface-design"
+      - section: "SMKI Code of Connection"
+        contents:
+          auto: "smki-coc"
+      - section: "SMKI Repository Code of Connection"
+        contents:
+          auto: "smki-repository-coc"
+      - section: "GB Companion Specification"
+        contents:
+          auto: "gb-companion"
+      - glossary.qmd
+  llms-txt: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false

@@ -1,0 +1,17 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/dcc-user-interface/concepts.html",
+      "/gb-companion/concepts.html",
+      "/smki-coc/concepts.html",
+      "/smki-interface-design/concepts.html",
+      "/smki-repository-coc/concepts.html",
+      "/dcc-user-interface/overview.html",
+      "/gb-companion/overview.html",
+      "/smki-coc/overview.html",
+      "/smki-interface-design/overview.html",
+      "/smki-repository-coc/overview.html"
+    ]
+  }
+]

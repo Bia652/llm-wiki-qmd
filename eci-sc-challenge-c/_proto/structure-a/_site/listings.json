@@ -1,0 +1,37 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/concepts/index.html",
+      "/documents/dcc-user-interface.html",
+      "/documents/index.html",
+      "/documents/gb-companion.html",
+      "/concepts/duis-messaging.html",
+      "/concepts/smki.html",
+      "/documents/smki-coc.html",
+      "/documents/smki-interface-design.html",
+      "/documents/smki-interface-design-addendum.html",
+      "/documents/smki-repository-coc.html",
+      "/concepts/smki-response-time-inference.html"
+    ]
+  },
+  {
+    "listing": "/documents/index.html",
+    "items": [
+      "/documents/dcc-user-interface.html",
+      "/documents/gb-companion.html",
+      "/documents/smki-coc.html",
+      "/documents/smki-interface-design.html",
+      "/documents/smki-interface-design-addendum.html",
+      "/documents/smki-repository-coc.html"
+    ]
+  },
+  {
+    "listing": "/concepts/index.html",
+    "items": [
+      "/concepts/duis-messaging.html",
+      "/concepts/smki.html",
+      "/concepts/smki-response-time-inference.html"
+    ]
+  }
+]

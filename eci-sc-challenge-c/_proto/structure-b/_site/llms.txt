@@ -1,0 +1,18 @@
+# SEC Knowledge Wiki — Prototype B (por documento de origem)
+
+> Protótipo Eixo 3 Opção 2: pasta por PDF com overview.qmd + concepts.qmd
+
+## Pages
+
+- [SMKI Repository Code of Connection](smki-repository-coc/overview.llms.md)
+- [SMKI Interface Design Specification](smki-interface-design/overview.llms.md)
+- [SMKI Code of Connection](smki-coc/overview.llms.md)
+- [SEC Knowledge Wiki — Prototype B](index.llms.md)
+- [GB Companion Specification (GBCS)](gb-companion/overview.llms.md)
+- [DCC User Interface Specification (DUIS)](dcc-user-interface/overview.llms.md)
+- [Conceitos — DCC User Interface](dcc-user-interface/concepts.llms.md)
+- [Conceitos — GB Companion Specification](gb-companion/concepts.llms.md)
+- [Glossary](glossary.llms.md)
+- [Conceitos — SMKI Code of Connection](smki-coc/concepts.llms.md)
+- [Conceitos — SMKI Interface Design](smki-interface-design/concepts.llms.md)
+- [Conceitos — SMKI Repository Code of Connection](smki-repository-coc/concepts.llms.md)

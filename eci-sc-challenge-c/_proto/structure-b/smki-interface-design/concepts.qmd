@@ -1,0 +1,32 @@
+---
+title: "Conceitos — SMKI Interface Design"
+type: concept
+categories: [security, pki, interface]
+related: [smki-interface-design/overview.qmd]
+last-ingested: 2026-07-24
+---
+
+Conceitos extraídos da [SMKI Interface Design Specification](overview.qmd).
+
+## SMKI (Smart Meter Key Infrastructure)
+
+A **Smart Meter Key Infrastructure (SMKI)** é a infraestrutura de chave
+pública (PKI) que certifica as chaves usadas para assinar digitalmente as
+comunicações no ecossistema SEC.
+
+<!-- Nota de protótipo: esta definição de SMKI já existe em
+dcc-user-interface/concepts.qmd. Não há uma página de conceito partilhada
+nesta estrutura, por isso ou se duplica a definição (como aqui) ou se faz um
+link "para fora" da pasta do documento, quebrando o isolamento por pasta que
+é a premissa da Opção B. -->
+
+## Emissão de certificados
+
+A DCC mantém o SMKI Service Interface através de três canais de submissão de
+Certificate Signing Requests (CSR):
+
+| Interface | Tipo de CSR |
+|---|---|
+| SMKI Portal (via DCC Gateway Connection) | Organisation CSR e Device CSR (Ad Hoc ou Batched) |
+| Ad Hoc Device CSR Web Service | Device CSR (ad hoc) |
+| Batched Device CSR Web Service | Device CSR (batched) |

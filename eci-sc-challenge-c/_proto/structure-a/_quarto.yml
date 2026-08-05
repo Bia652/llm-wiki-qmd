@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SEC Knowledge Wiki — Prototype A (por tipo de conteúdo)"
+  description: "Protótipo Eixo 3 Opção 1: documents/ + concepts/ + glossary.qmd"
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "Documents"
+        contents:
+          auto: "documents"
+      - section: "Concepts"
+        contents:
+          auto: "concepts"
+      - glossary.qmd
+  llms-txt: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false

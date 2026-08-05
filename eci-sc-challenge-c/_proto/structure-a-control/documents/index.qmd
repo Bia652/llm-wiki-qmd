@@ -1,0 +1,12 @@
+---
+title: "Documents"
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, source-version, categories]
+  sort: "title"
+---
+
+Uma página por PDF de origem: metadata, resumo do propósito/estrutura, e link
+para o artifact original. Não repete o conteúdo integral do PDF — isso vive
+nas páginas `concepts/`, que sintetizam entre documentos.

@@ -1,0 +1,16 @@
+---
+title: "Tempo estimado até emissão de certificado SMKI (dado sintético, para teste)"
+type: concept
+categories: [security, pki]
+related: [documents/smki-interface-design.qmd, documents/smki-coc.qmd]
+last-ingested: 2026-07-27
+status: verified
+confidence-score: 0.3
+supersedes: []
+last-verified: 2026-07-27
+---
+
+Combinando o Target Response Time de submissão de CSR ([SMKI Interface Design
+Specification](../documents/smki-interface-design.qmd)) com o tempo médio de validação por um
+Authorised Responsible Officer ([SMKI Code of Connection](../documents/smki-coc.qmd)), o tempo
+total até à emissão de um certificado SMKI é de **7 dias úteis**.

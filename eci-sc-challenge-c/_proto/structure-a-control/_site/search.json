@@ -1,0 +1,512 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SEC Knowledge Wiki — Prototype A",
+    "section": "",
+    "text": "Protótipo de estrutura Quarto por tipo de conteúdo (Eixo 3, Opção 1), com granularidade híbrida (Eixo 2, Opção C): uma página documents/ por PDF de origem e páginas concepts/ que sintetizam conhecimento cross-documento.\nCorpus atual (1 PDF ingerido): DCC User Interface Specification (DUIS) v5.4.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\ntype\n\n\n\nCategories\n\n\n\n\n\n\n\n\nConcepts\n\n\n \n\n\n \n\n\n\n\n\n\nDCC User Interface Specification (DUIS)\n\n\ndocument\n\n\ndcc, messaging, interface\n\n\n\n\n\n\nDocuments\n\n\n \n\n\n \n\n\n\n\n\n\nGB Companion Specification (GBCS)\n\n\ndocument\n\n\ndevices, messaging, certification\n\n\n\n\n\n\nMensagens DUIS (Service Requests / Responses)\n\n\nconcept\n\n\ndcc, messaging\n\n\n\n\n\n\nSMKI (Smart Meter Key Infrastructure)\n\n\nconcept\n\n\nsecurity, pki\n\n\n\n\n\n\nSMKI Code of Connection\n\n\ndocument\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nSMKI Interface Design Specification\n\n\ndocument\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nSMKI Interface Design Specification — Nota Complementar (sintético, para teste)\n\n\ndocument\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nSMKI Repository Code of Connection\n\n\ndocument\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nTempo estimado até emissão de certificado SMKI (dado sintético, para teste)\n\n\nconcept\n\n\nsecurity, pki\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "SEC Knowledge Wiki — Prototype A"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html",
+    "href": "documents/smki-repository-coc.html",
+    "title": "SMKI Repository Code of Connection",
+    "section": "",
+    "text": "Este é o documento SMKI Repository Code of Connection, exigido pela Secção L6.5 do SEC.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html#propósito",
+    "href": "documents/smki-repository-coc.html#propósito",
+    "title": "SMKI Repository Code of Connection",
+    "section": "",
+    "text": "Este é o documento SMKI Repository Code of Connection, exigido pela Secção L6.5 do SEC.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html#estrutura-do-documento",
+    "href": "documents/smki-repository-coc.html#estrutura-do-documento",
+    "title": "SMKI Repository Code of Connection",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\nConnection Mechanism (acesso à interface, Browser Policy, submissão de informação ao SMKI Repository)\nSMKI Repository interfaces (acesso ao conteúdo do SMKI Repository sem DCC Gateway Connection)\nAuthentication\nManaging Demand (respostas de erro)",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html#acesso-ao-smki-repository",
+    "href": "documents/smki-repository-coc.html#acesso-ao-smki-repository",
+    "title": "SMKI Repository Code of Connection",
+    "section": "Acesso ao SMKI Repository",
+    "text": "Acesso ao SMKI Repository\nUsers com DCC Gateway Connection ligam-se às interfaces do SMKI Repository via essa ligação, com credenciais próprias de autenticação. Users sem DCC Gateway Connection podem aceder ao conteúdo do Repository via Service Desk (visita, email, carta, telefone) ou via Internet através do SMKI Portal.\nVer SMKI para a síntese cross-documento deste conceito.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html#fonte",
+    "href": "documents/smki-repository-coc.html#fonte",
+    "title": "SMKI Repository Code of Connection",
+    "section": "Fonte",
+    "text": "Fonte\nPDF original: SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design-addendum.html",
+    "href": "documents/smki-interface-design-addendum.html",
+    "title": "SMKI Interface Design Specification — Nota Complementar (sintético, para teste)",
+    "section": "",
+    "text": "O Target Response Time para submissão de CSR via SMKI Portal, segundo esta nota, é de 2 dias úteis.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification — Nota Complementar (sintético, para teste)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design-addendum.html#target-response-time-dado-sintético-para-teste",
+    "href": "documents/smki-interface-design-addendum.html#target-response-time-dado-sintético-para-teste",
+    "title": "SMKI Interface Design Specification — Nota Complementar (sintético, para teste)",
+    "section": "",
+    "text": "O Target Response Time para submissão de CSR via SMKI Portal, segundo esta nota, é de 2 dias úteis.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification — Nota Complementar (sintético, para teste)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design-addendum.html#fonte",
+    "href": "documents/smki-interface-design-addendum.html#fonte",
+    "title": "SMKI Interface Design Specification — Nota Complementar (sintético, para teste)",
+    "section": "Fonte",
+    "text": "Fonte\nEste documento trata do mesmo tema que a SMKI Interface Design Specification.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification — Nota Complementar (sintético, para teste)"
+    ]
+  },
+  {
+    "objectID": "documents/index.html",
+    "href": "documents/index.html",
+    "title": "Documents",
+    "section": "",
+    "text": "Uma página por PDF de origem: metadata, resumo do propósito/estrutura, e link para o artifact original. Não repete o conteúdo integral do PDF — isso vive nas páginas concepts/, que sintetizam entre documentos.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nsource-version\n\n\n\nCategories\n\n\n\n\n\n\n\n\nDCC User Interface Specification (DUIS)\n\n\nv5.4, 6 November 2025\n\n\ndcc, messaging, interface\n\n\n\n\n\n\nGB Companion Specification (GBCS)\n\n\nv4.4\n\n\ndevices, messaging, certification\n\n\n\n\n\n\nSMKI Code of Connection\n\n\nv4.0\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nSMKI Interface Design Specification\n\n\nv8.0\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nSMKI Interface Design Specification — Nota Complementar (sintético, para teste)\n\n\nsintético, para teste — não corresponde a uma especificação real do SEC\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nSMKI Repository Code of Connection\n\n\nv3.0\n\n\nsecurity, pki, interface\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Documents",
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html",
+    "href": "documents/dcc-user-interface.html",
+    "title": "DCC User Interface Specification (DUIS)",
+    "section": "",
+    "text": "Nos termos da Secção H3, a DCC User Interface Specification (DUIS) especifica os detalhes técnicos da DCC User Interface: mecanismos, formatos, protocolos e outros detalhes técnicos necessários para os Users enviarem e receberem comunicações de/para a DCC (Secção H3.3).\nExistem variações no tratamento de mensagens para Dispositivos SMETS1, descritas na cláusula 1.4.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#propósito",
+    "href": "documents/dcc-user-interface.html#propósito",
+    "title": "DCC User Interface Specification (DUIS)",
+    "section": "",
+    "text": "Nos termos da Secção H3, a DCC User Interface Specification (DUIS) especifica os detalhes técnicos da DCC User Interface: mecanismos, formatos, protocolos e outros detalhes técnicos necessários para os Users enviarem e receberem comunicações de/para a DCC (Secção H3.3).\nExistem variações no tratamento de mensagens para Dispositivos SMETS1, descritas na cláusula 1.4.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#estrutura-do-documento",
+    "href": "documents/dcc-user-interface.html#estrutura-do-documento",
+    "title": "DCC User Interface Specification (DUIS)",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\nIntroduction (propósito, termos definidos, variações SMETS1)\nThe Interface (mecanismos de ligação, web services, tratamento de erros)\nMessages Sent Over The Interface (Service Request Matrix, controlo de acesso, operações criptográficas, formatos de Request/Response, Alerts, definições de Service Request)",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#segurança-e-criptografia",
+    "href": "documents/dcc-user-interface.html#segurança-e-criptografia",
+    "title": "DCC User Interface Specification (DUIS)",
+    "section": "Segurança e criptografia",
+    "text": "Segurança e criptografia\nA secção 3.3 (Key Cryptographic Operations) define como as mensagens DUIS XML são assinadas digitalmente (ECDSA sobre a curva P-256), com as chaves públicas certificadas ao abrigo da Smart Meter Key Infrastructure (SMKI) — ver SMKI para a síntese cross-documento deste conceito.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#mensagens-e-service-requests",
+    "href": "documents/dcc-user-interface.html#mensagens-e-service-requests",
+    "title": "DCC User Interface Specification (DUIS)",
+    "section": "Mensagens e Service Requests",
+    "text": "Mensagens e Service Requests\nFormatos de Service Request/Response, Command Variants e tipos de pedido (Device/Non-Device) — ver Mensagens DUIS.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#fonte",
+    "href": "documents/dcc-user-interface.html#fonte",
+    "title": "DCC User Interface Specification (DUIS)",
+    "section": "Fonte",
+    "text": "Fonte\nPDF original: SEC-Appendix-AD-DCC-User-Interface-Specification-v5.4",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (DUIS)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki-response-time-inference.html",
+    "href": "concepts/smki-response-time-inference.html",
+    "title": "Tempo estimado até emissão de certificado SMKI (dado sintético, para teste)",
+    "section": "",
+    "text": "Combinando o Target Response Time de submissão de CSR (SMKI Interface Design Specification) com o tempo médio de validação por um Authorised Responsible Officer (SMKI Code of Connection), o tempo total até à emissão de um certificado SMKI é de 7 dias úteis.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Tempo estimado até emissão de certificado SMKI (dado sintético, para teste)"
+    ]
+  },
+  {
+    "objectID": "concepts/duis-messaging.html",
+    "href": "concepts/duis-messaging.html",
+    "title": "Mensagens DUIS (Service Requests / Responses)",
+    "section": "",
+    "text": "Síntese do modelo de mensagens definido pela DCC User Interface Specification.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Mensagens DUIS (Service Requests / Responses)"
+    ]
+  },
+  {
+    "objectID": "concepts/duis-messaging.html#tipos-de-pedido",
+    "href": "concepts/duis-messaging.html#tipos-de-pedido",
+    "title": "Mensagens DUIS (Service Requests / Responses)",
+    "section": "Tipos de pedido",
+    "text": "Tipos de pedido\n\nDevice Requests (Critical / Non Critical) — dirigidos a um Device.\nNon-Device Requests — não dirigidos a um Device.\nSigned Pre-Commands — comandos assinados para entrega local/futura.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Mensagens DUIS (Service Requests / Responses)"
+    ]
+  },
+  {
+    "objectID": "concepts/duis-messaging.html#command-variant",
+    "href": "concepts/duis-messaging.html#command-variant",
+    "title": "Mensagens DUIS (Service Requests / Responses)",
+    "section": "Command Variant",
+    "text": "Command Variant\nCada Service Request/Signed Pre-Command inclui um Common Object que indica ao DCC como tratar a mensagem: transformar para assinatura, enviar ao Device, devolver para aplicação local (Hand Held Terminal), ou executar diretamente pela DCC.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Mensagens DUIS (Service Requests / Responses)"
+    ]
+  },
+  {
+    "objectID": "concepts/duis-messaging.html#fontes",
+    "href": "concepts/duis-messaging.html#fontes",
+    "title": "Mensagens DUIS (Service Requests / Responses)",
+    "section": "Fontes",
+    "text": "Fontes\n\nDCC User Interface Specification — cláusulas 3.4–3.5",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Mensagens DUIS (Service Requests / Responses)"
+    ]
+  },
+  {
+    "objectID": "concepts/index.html",
+    "href": "concepts/index.html",
+    "title": "Concepts",
+    "section": "",
+    "text": "Páginas de síntese cross-documento: cada conceito agrega o que os vários PDFs dizem sobre ele, em vez de ficar espalhado por várias páginas documents/.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nrelated\n\n\n\n\n\n\n\n\nMensagens DUIS (Service Requests / Responses)\n\n\ndcc, messaging\n\n\ndocuments/dcc-user-interface.qmd\n\n\n\n\n\n\nSMKI (Smart Meter Key Infrastructure)\n\n\nsecurity, pki\n\n\ndocuments/dcc-user-interface.qmd, documents/smki-interface-design.qmd, documents/smki-coc.qmd, documents/smki-repository-coc.qmd\n\n\n\n\n\n\nTempo estimado até emissão de certificado SMKI (dado sintético, para teste)\n\n\nsecurity, pki\n\n\ndocuments/smki-interface-design.qmd, documents/smki-coc.qmd\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Concepts",
+      "Concepts"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html",
+    "href": "concepts/smki.html",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "",
+    "text": "A Smart Meter Key Infrastructure (SMKI) é a infraestrutura de chave pública (PKI) que certifica as chaves usadas para assinar digitalmente as comunicações no ecossistema SEC.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#uso-na-duis",
+    "href": "concepts/smki.html#uso-na-duis",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "Uso na DUIS",
+    "text": "Uso na DUIS\nSegundo a DCC User Interface Specification (cláusula 3.3, Key Cryptographic Operations), todas as mensagens DUIS XML trocadas entre Users e a DCC são assinadas com ECDSA sobre a curva P-256, usando chaves públicas certificadas ao abrigo da SMKI. Existem três tipos de chave privada distintos, cada um dedicado a um propósito:\n\n\n\n\n\n\n\n\nChave\nUsada por\nPropósito\n\n\n\n\nXML User Role Signing Private Key\nUser\nAssinar Service Requests e Signed Pre-Commands\n\n\nDCC Transform Private Key\nDCC\nAssinar Service Responses com Pre-Commands\n\n\nDCC Access Control Broker Private Key\nDCC\nAssinar DCC Alerts e outras Service Responses",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#emissão-de-certificados-smki-interface-design-specification",
+    "href": "concepts/smki.html#emissão-de-certificados-smki-interface-design-specification",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "Emissão de certificados (SMKI Interface Design Specification)",
+    "text": "Emissão de certificados (SMKI Interface Design Specification)\nSegundo a SMKI Interface Design Specification (Secção L4), a DCC mantém o SMKI Service Interface através de três canais de submissão de Certificate Signing Requests (CSR), que resultam na emissão dos certificados usados pelas chaves acima:\n\n\n\n\n\n\n\nInterface\nTipo de CSR\n\n\n\n\nSMKI Portal (via DCC Gateway Connection)\nOrganisation CSR e Device CSR (Ad Hoc ou Batched)\n\n\nAd Hoc Device CSR Web Service\nDevice CSR (ad hoc)\n\n\nBatched Device CSR Web Service\nDevice CSR (batched)",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#ligação-aos-smki-services-smki-code-of-connection",
+    "href": "concepts/smki.html#ligação-aos-smki-services-smki-code-of-connection",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "Ligação aos SMKI Services (SMKI Code of Connection)",
+    "text": "Ligação aos SMKI Services (SMKI Code of Connection)\nSegundo o SMKI Code of Connection (Secção L4.5), só pessoas com o estatuto de Authorised Responsible Officer (ARO), com credenciais IKI emitidas conforme o SMKI RAPP, podem aceder aos SMKI Services em nome da sua organização — a ligação é feita preferencialmente via DCC Gateway Connection.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#acesso-ao-smki-repository-smki-repository-code-of-connection",
+    "href": "concepts/smki.html#acesso-ao-smki-repository-smki-repository-code-of-connection",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "Acesso ao SMKI Repository (SMKI Repository Code of Connection)",
+    "text": "Acesso ao SMKI Repository (SMKI Repository Code of Connection)\nSegundo o SMKI Repository Code of Connection (Secção L6.5), os certificados e outra informação emitida ao abrigo da SMKI ficam depositados no SMKI Repository, acessível via DCC Gateway Connection (com credenciais próprias) ou, para quem não tem Gateway Connection, via Service Desk ou pelo SMKI Portal na Internet.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#fontes",
+    "href": "concepts/smki.html#fontes",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "Fontes",
+    "text": "Fontes\n\nDCC User Interface Specification — cláusula 3.3 (uso das chaves)\nSMKI Interface Design Specification — Secção L4 (emissão de certificados)\nSMKI Code of Connection — Secção L4.5 (ligação e autenticação)\nSMKI Repository Code of Connection — Secção L6.5 (acesso ao repositório)",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html",
+    "href": "documents/gb-companion.html",
+    "title": "GB Companion Specification (GBCS)",
+    "section": "",
+    "text": "A Great Britain Companion Specification (GBCS) define os requisitos que os Dispositivos (GSME, ESME, Communications Hubs, HCALCS, PPMID, IHD, SAPC) têm de cumprir, tal como exigido pelas respetivas especificações técnicas (GSMETS, ESMETS, CHTS, HCALCSTS, PPMIDTS, IHDTS, SAPCTS). Cada tipo de Dispositivo tem de ser certificado pelo NCSC como compatível com a característica de segurança “Commercial Product Assurance” relevante.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "GB Companion Specification (GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html#propósito",
+    "href": "documents/gb-companion.html#propósito",
+    "title": "GB Companion Specification (GBCS)",
+    "section": "",
+    "text": "A Great Britain Companion Specification (GBCS) define os requisitos que os Dispositivos (GSME, ESME, Communications Hubs, HCALCS, PPMID, IHD, SAPC) têm de cumprir, tal como exigido pelas respetivas especificações técnicas (GSMETS, ESMETS, CHTS, HCALCSTS, PPMIDTS, IHDTS, SAPCTS). Cada tipo de Dispositivo tem de ser certificado pelo NCSC como compatível com a característica de segurança “Commercial Product Assurance” relevante.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "GB Companion Specification (GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html#estrutura-do-documento",
+    "href": "documents/gb-companion.html#estrutura-do-documento",
+    "title": "GB Companion Specification (GBCS)",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\nDocumento extenso (&gt;20 secções), misturando secções normativas e informativas. Termos definidos (capitalizados) remetem para o Glossário (Secção 21); estruturas em courier new são especificadas em ASN.1.\nNota: este documento não faz referência a SMKI — o seu âmbito é o formato de mensagens e certificação de Dispositivos (GBCS), não a infraestrutura de chaves.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "GB Companion Specification (GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html#fonte",
+    "href": "documents/gb-companion.html#fonte",
+    "title": "GB Companion Specification (GBCS)",
+    "section": "Fonte",
+    "text": "Fonte\nPDF original: SEC-Schedule-8-GB-Companion-Specification-v4.4",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "GB Companion Specification (GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html",
+    "href": "documents/smki-coc.html",
+    "title": "SMKI Code of Connection",
+    "section": "",
+    "text": "Este documento é o SMKI Code of Connection, produzido nos termos da Secção L4.5 do Code. Os termos definidos têm o significado da Secção A do SEC, do Appendix M (SMKI Interface Design Specification) e do Appendix A deste documento.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html#propósito",
+    "href": "documents/smki-coc.html#propósito",
+    "title": "SMKI Code of Connection",
+    "section": "",
+    "text": "Este documento é o SMKI Code of Connection, produzido nos termos da Secção L4.5 do Code. Os termos definidos têm o significado da Secção A do SEC, do Appendix M (SMKI Interface Design Specification) e do Appendix A deste documento.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html#estrutura-do-documento",
+    "href": "documents/smki-coc.html#estrutura-do-documento",
+    "title": "SMKI Code of Connection",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\nConnection Mechanism (mecanismo de ligação, Browser Policy)\nSMKI Services interfaces (via DCC Gateway Connection: SMKI Portal, Ad Hoc/Batched Device CSR Web Service; autenticação a cada uma)\nManaging Demand (gestão de capacidade)",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html#acesso-e-autenticação-aos-smki-services",
+    "href": "documents/smki-coc.html#acesso-e-autenticação-aos-smki-services",
+    "title": "SMKI Code of Connection",
+    "section": "Acesso e autenticação aos SMKI Services",
+    "text": "Acesso e autenticação aos SMKI Services\nSó pessoas com o estatuto de Authorised Responsible Officer (ARO), com credenciais IKI emitidas conforme o SMKI RAPP, podem aceder aos SMKI Services em nome da sua organização. A ligação é feita preferencialmente via DCC Gateway Connection, com Internet como alternativa quando não é razoavelmente praticável usar o Gateway.\nVer SMKI para a síntese cross-documento deste conceito.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html#fonte",
+    "href": "documents/smki-coc.html#fonte",
+    "title": "SMKI Code of Connection",
+    "section": "Fonte",
+    "text": "Fonte\nPDF original: SEC-Appendix-N-SMKI-Code-of-Connection-v4.0",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html",
+    "href": "documents/smki-interface-design.html",
+    "title": "SMKI Interface Design Specification",
+    "section": "",
+    "text": "A Secção L4 do Code estabelece a obrigação da DCC de manter o SMKI Service Interface de acordo com a SMKI Interface Design Specification. A Secção L4.4 define o conteúdo desta especificação, incluindo os protocolos e standards técnicos (todos baseados em standards abertos) e os detalhes técnicos das interfaces aos SMKI Services relevantes para Authorised Subscribers.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html#propósito",
+    "href": "documents/smki-interface-design.html#propósito",
+    "title": "SMKI Interface Design Specification",
+    "section": "",
+    "text": "A Secção L4 do Code estabelece a obrigação da DCC de manter o SMKI Service Interface de acordo com a SMKI Interface Design Specification. A Secção L4.4 define o conteúdo desta especificação, incluindo os protocolos e standards técnicos (todos baseados em standards abertos) e os detalhes técnicos das interfaces aos SMKI Services relevantes para Authorised Subscribers.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html#estrutura-do-documento",
+    "href": "documents/smki-interface-design.html#estrutura-do-documento",
+    "title": "SMKI Interface Design Specification",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\nIntroduction (propósito, Target Response Times)\nSMKI interfaces — definição, obrigações gerais, e as três interfaces de submissão de Certificate Signing Requests (CSR):\n\nSMKI Portal interface (via DCC Gateway Connection)\nAd Hoc Device CSR Web Service interface\nBatched Device CSR Web Service interface\n\n\nVer SMKI para a síntese cross-documento deste conceito (inclui também o uso de SMKI na DUIS).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html#target-response-time-dado-sintético-para-teste",
+    "href": "documents/smki-interface-design.html#target-response-time-dado-sintético-para-teste",
+    "title": "SMKI Interface Design Specification",
+    "section": "Target Response Time (dado sintético, para teste)",
+    "text": "Target Response Time (dado sintético, para teste)\nO Target Response Time para submissão de CSR via SMKI Portal, segundo esta especificação, é de 5 dias úteis. (Nota: valor sintético, introduzido para fins de teste; não consta do texto original resumido acima.)",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html#fonte",
+    "href": "documents/smki-interface-design.html#fonte",
+    "title": "SMKI Interface Design Specification",
+    "section": "Fonte",
+    "text": "Fonte\nPDF original: SEC-Appendix-M-SMKI-Interface-Design-Specification-v8.0",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification"
+    ]
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Termo\nDefinição\nFonte\n\n\n\n\nDUIS\nDCC User Interface Specification\nDUIS\n\n\nSMKI\nSmart Meter Key Infrastructure\nSMKI\n\n\nDCC Alert\nAlerta gerado no DCC Total System (exceto Device Alert) enviado a Users relevantes\nDUIS\n\n\nDevice Alert\nComunicação contendo um Alert (definido pela GBCS) gerado por um Device, ou um SMETS1 Alert\nDUIS\n\n\nCommand Variant\nValor de um Common Object que indica como o DCC deve tratar a mensagem\nMensagens DUIS\n\n\nCommon Object\nItem ou grupo de dados comum a Service Requests, Signed Pre-Commands, Service Responses, DCC/Device Alerts\nMensagens DUIS\n\n\nGBCS\nGreat Britain Companion Specification\nDUIS\n\n\nCPL\nCentral Products List\nDUIS",
+    "crumbs": [
+      "Glossary"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+---
+title: "SMKI Interface Design Specification — Nota Complementar (sintético, para teste)"
+type: document
+source-pdf: "../../../pdfs/SEC-Appendix-M-SMKI-Interface-Design-Specification-v8.0.pdf"
+source-version: "sintético, para teste — não corresponde a uma especificação real do SEC"
+categories: [security, pki, interface]
+related: [concepts/smki.qmd, documents/smki-interface-design.qmd]
+last-ingested: 2026-07-27
+---
+
+## Target Response Time (dado sintético, para teste)
+
+O Target Response Time para submissão de CSR via SMKI Portal, segundo esta nota, é de
+**2 dias úteis**.
+
+## Fonte
+
+Este documento trata do mesmo tema que a [SMKI Interface Design Specification](smki-interface-design.qmd).

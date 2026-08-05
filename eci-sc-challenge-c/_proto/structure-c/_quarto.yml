@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SEC Knowledge Wiki — Prototype C (1 página por PDF, sem conceitos)"
+  description: "Baseline Eixo 2 Opção A: 1 .qmd por PDF, sem camada de conceitos cross-documento"
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "Documents"
+        contents:
+          auto: "documents"
+  llms-txt: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false
