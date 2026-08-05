@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(quarto render *)",
+      "Bash(python -m markitdown --help)",
+      "Bash(pip show *)",
+      "Bash(pip install *)",
+      "Bash(python -m markitdown \"pdfs/SEC-Appendix-N-SMKI-Code-of-Connection-v4.0.pdf\" -o \"_proto/raw-md/smki-coc.md\")",
+      "Bash(python -m markitdown \"pdfs/SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0.pdf\" -o \"_proto/raw-md/smki-repo-coc.md\")",
+      "Bash(python -m markitdown \"pdfs/SEC-Appendix-M-SMKI-Interface-Design-Specification-v8.0.pdf\" -o \"_proto/raw-md/smki-interface-design.md\")",
+      "Bash(python -m markitdown \"pdfs/SEC-Appendix-AD-DCC-User-Interface-Specification-v5.4-6-November-2025.pdf\" -o \"_proto/raw-md/dcc-user-interface.md\")",
+      "Bash(python -m markitdown \"pdfs/SEC-Schedule-8-GB-Companion-Specification-v4.4 1.pdf\" -o \"_proto/raw-md/gb-companion.md\")",
+      "Bash(echo \"EXIT CODE: $?\")",
+      "Bash(echo \"EXIT: $?\")",
+      "Read(//tmp/**)",
+      "Bash(quarto --version)",
+      "Bash(mkdir -p \"_proto/raw-md\")",
+      "Bash(mkdir -p \"wiki/documents\" \"wiki/concepts\")",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(python -m markitdown \"pdfs/SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0.pdf\" -o \"_proto/raw-md/smki-repository-coc.md\")",
+      "Bash(git check-ignore *)",
+      "Read(//c/Users/CSWSIS~1/AppData/Local/Temp/claude/C--Users-cswsis26-bcm-OneDrive---CRITICAL-SOFTWARE--S-A-ECI1-eci-sc-challenge-c/e4f5756b-d822-4bef-ae14-7a7b5e9afb9b/scratchpad/bench-pilot/q1_low/**)",
+      "Bash(pwd -W)",
+      "Artifact"
+    ]
+  }
+}

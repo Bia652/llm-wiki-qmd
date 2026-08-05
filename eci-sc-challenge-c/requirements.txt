@@ -1,0 +1,2 @@
+# PDF -> Markdown ingestion tooling (Challenge C — Quarto wiki)
+markitdown[pdf]==0.1.6
