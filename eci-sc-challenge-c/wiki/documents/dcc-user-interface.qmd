@@ -1,0 +1,80 @@
+---
+title: "DCC User Interface Specification (SEC Appendix AD / DUIS)"
+type: document
+source-pdf: "../../pdfs/SEC-Appendix-AD-DCC-User-Interface-Specification-v5.4-6-November-2025.pdf"
+source-version: "5.4 (6 November 2025)"
+categories: [duis, dcc, messaging, gbcs, interface]
+related: ["../concepts/duis-messaging.qmd"]
+last-ingested: 2026-07-27
+status: draft
+confidence-score: 0.75
+supersedes: []
+---
+
+## Propósito
+
+O **DUIS (DCC User Interface Specification)**, produzido nos termos da Secção H3 do SEC,
+especifica os mecanismos, formatos, protocolos e outros detalhes técnicos necessários para os
+Users enviarem e receberem comunicações do/para o DCC através do DCC User Interface — a
+interface pela qual Suppliers, Network Operators e outros Users interagem com Devices (smart
+meters) via a rede DCC. Documento extenso (~350 páginas na fonte); esta página sintetiza a
+estrutura e os mecanismos-chave, sem reproduzir o catálogo completo de Service Requests.
+
+## Estrutura do documento
+
+- **1. Introduction** — propósito, estrutura do documento, termos definidos (Secção 1.3), e
+  variações de tratamento para **Devices SMETS1** (Secção 1.4) — SMETS1 tem regras de
+  processamento, validação e Alerts distintas das versões SMETS posteriores.
+- **2. The Interface**
+  - **2.1 Connection Mechanisms** — Enrolment/Communication/Local Command Services só são
+    acessíveis via **DCC Gateway Connection**; ligação lógica protegida por TLS com certificados
+    **DCCKI** (DCC Key Infrastructure) para autenticação mútua cliente/servidor (RFC 5246,
+    `TLS_RSA_WITH_AES_128_GCM_SHA256`).
+  - **2.3 Time** — todos os timestamps em UTC, formato XML com sufixo `Z`, precisão ao centésimo
+    de segundo condicionada ao tipo de Command (ASN.1 vs. DLMS COSEM/GBZ).
+  - **2.4 Web Services** — três Web Services para processar Service Requests/Signed
+    Pre-Commands: **Transform Service** (síncrona, transforma Critical Service Requests em
+    formato GBCS e devolve Pre-Commands para assinatura), **Non-Device Service** (síncrona, para
+    Service Requests que não envolvem um Device), e **Send Command Service** (assíncrona, para
+    Non-Critical Service Requests/Signed Pre-Commands). Cada User implementa também um
+    **Receive Response Service** para receber Service Responses/Alerts.
+  - **2.6 Messaging Features** — modos de tratamento de Service Requests: `Transform`,
+    `On-Demand`, `Non-Device Requests`, `Future Dated Response Pattern` (Device e DSP), `Meter
+    Scheduled`, `DCC Scheduled`, `Device Alerts`, `DCC Alerts`. Cada Service Request declara um
+    **Command Variant (CV)** que determina qual Web Service usar e o padrão de entrega (secção
+    2.6.1, tabela extensa de CVs 1–N).
+- **3. Messages Sent Over The Interface**
+  - **3.1 Service Request Matrix** — mapeamento completo de Service Requests para User Roles
+    elegíveis (secção muito extensa, não reproduzida aqui).
+  - **3.2 Access Control** — cinco estágios sequenciais aplicados a todo Service
+    Request/Signed Pre-Command: **Communications Authentication** (TLS com certificado DCCKI) →
+    **XSD Validation** → **Request Authentication** (assinatura com chave SMKI) → **Request
+    Authorisation** (User Role tem direitos de acesso ao Device?) → **Data Validation**. Todos os
+    cinco estágios têm de passar; falhas geram um Response/HTTP Response Code específico (ex.:
+    `E100` para falha de validação de certificado, `E65` para Remote Party Role inválido, `E1`/`E2`
+    para falhas de autorização de User Role).
+  - **3.3 Key Cryptographic Operations** — assinatura XML de Service Requests (DUIS XML Service
+    Request Signing), validação de assinatura de Transform Service Response, e assinatura de
+    Service Responses pelo DCC.
+  - **3.4–3.6 Requests/Responses/Alerts** — formatos de Request, Acknowledgement, Service
+    Response (incl. variantes `PreCommand`, `LocalCommand`, `GBCSPayload`, `CINMessage`,
+    `DSPScheduledMessage`), Device Alerts e DCC Alerts.
+  - **3.7 Target Response Times** — prazos-alvo de resposta por tipo de Service Request/canal.
+  - **3.8 Service Request Definitions** — catálogo extenso (mais de 80 definições) de Service
+    Requests individuais (ex.: Update Import Tariff, Update Payment Mode, Read Instantaneous
+    Import Registers, Update Security Credentials, Set CHF Sub GHz Configuration), cada um com
+    elementos primários/secundários, formato e regras de validação próprias — não enumerado
+    individualmente nesta síntese; consultar o PDF de origem para o detalhe de um Service Request
+    específico.
+
+## Nota de confiança
+
+Esta página cobre com confiança a arquitetura de mensagens (Secções 1–3.3) a partir de leitura
+direta do texto convertido. As Secções 1.4 (variações SMETS1, ~15 páginas) e 3.8 (catálogo de
+Service Requests, a maior parte do documento) **não foram lidas exaustivamente** — a síntese
+acima é estrutural (títulos/organização), não um resumo de conteúdo de cada Service Request.
+Perguntas sobre um Service Request específico devem ir à fonte primária.
+
+## Fonte
+
+[SEC-Appendix-AD-DCC-User-Interface-Specification-v5.4-6-November-2025.pdf](../../pdfs/SEC-Appendix-AD-DCC-User-Interface-Specification-v5.4-6-November-2025.pdf)

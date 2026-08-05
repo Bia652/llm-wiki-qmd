@@ -1,0 +1,30 @@
+# SMKI Repository Code of Connection (SEC Appendix P)
+
+smki
+
+repository
+
+code-of-connection
+
+dcc-gateway
+
+authentication
+
+## Propósito
+
+Documento produzido nos termos da Secção L6.5 do SEC: define o mecanismo de ligação, autenticação e gestão de procura para o **SMKI Repository** — o repositório onde são alojados (lodged) Certificados e outra informação da SMKI, distinto das interfaces de emissão de Certificados cobertas pelo SEC Appendix M/N.
+
+## Estrutura do documento
+
+- **1. Connection Mechanism** — utilizadores com DCC Gateway Connection ligam-se ao SMKI Repository via essa ligação, com credenciais próprias; sem DCC Gateway Connection, o acesso ao conteúdo é feito por contacto com o Service Desk (visita, e-mail, carta assinada, telefone), entrega via CD/DVD/e-mail, ou via SMKI Portal pela Internet.
+  - **1.3 Lodging Information** — só AROs (agindo em nome da SMKI PMA ou do Code Administrator) podem lodge informação no Repository, após autenticação da identidade contra o ARO Nomination Form.
+- **2. SMKI Repository interfaces** — secção 2.1 “Not used”; 2.2 cobre o acesso ao conteúdo para utilizadores sem DCC Gateway Connection (ver acima).
+- **3. Authentication** — utilizadores com DCC Gateway Connection recebem username/password (SMKI RAPP); password deve ser alterada no primeiro login; bloqueio automático de conta por 1h após 5 tentativas falhadas num período de 1h, com desbloqueio manual via Service Desk mediante verificação de identidade da ARO.
+- **4. Managing Demand** — cada utilizador com DCC Gateway Connection tem de fornecer uma previsão (forecast) razoável do número de certificados que espera obter, e não deve exceder **120% dessa previsão**; excesso sustentado deve ser comunicado ao Service Desk.
+  - **4.1 Error Responses** — em caso de falha de serviço/infraestrutura, pode não ser possível gerar/entregar uma mensagem de erro do SMKI Repository Interface.
+- **Appendix A** — templates de previsão de uso (Usage Forecast, SFTP Full Download Forecast, % de previsão diária por período: Off Peak/Core/Non-Core).
+- **Appendix B Definitions** — `API Key` (chave usada para identificar o utilizador da SMKI Repository Web Service interface).
+
+## Fonte
+
+[SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0.pdf](../../pdfs/SEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0.pdf)

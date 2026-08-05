@@ -1,0 +1,498 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SEC Wiki — Smart Energy Code (SMKI / DCC)",
+    "section": "",
+    "text": "Base de conhecimento sobre o domínio SEC (Smart Energy Code), cobrindo as interfaces e mecanismos de conexão da SMKI (Smart Meter Key Infrastructure) e do DCC (Data Communications Company) para a rede de contadores inteligentes do Reino Unido.",
+    "crumbs": [
+      "SEC Wiki — Smart Energy Code (SMKI / DCC)"
+    ]
+  },
+  {
+    "objectID": "index.html#como-navegar",
+    "href": "index.html#como-navegar",
+    "title": "SEC Wiki — Smart Energy Code (SMKI / DCC)",
+    "section": "Como navegar",
+    "text": "Como navegar\n\nDocuments — uma página por PDF de origem (metadata, resumo e link ao artifact original).\nConcepts — páginas de síntese cross-documento por conceito/entidade (ex.: SMKI, DUIS).\nGlossary — termos e siglas usados nos documentos (DUIS, SMKI, SEC, GBCS, DCC, …).",
+    "crumbs": [
+      "SEC Wiki — Smart Energy Code (SMKI / DCC)"
+    ]
+  },
+  {
+    "objectID": "index.html#fontes",
+    "href": "index.html#fontes",
+    "title": "SEC Wiki — Smart Energy Code (SMKI / DCC)",
+    "section": "Fontes",
+    "text": "Fontes\nTodas as páginas desta wiki derivam dos PDFs imutáveis em pdfs/ na raiz do repositório. Cada página type: document liga de volta ao PDF que a originou.",
+    "crumbs": [
+      "SEC Wiki — Smart Energy Code (SMKI / DCC)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html",
+    "href": "documents/smki-repository-coc.html",
+    "title": "SMKI Repository Code of Connection (SEC Appendix P)",
+    "section": "",
+    "text": "Documento produzido nos termos da Secção L6.5 do SEC: define o mecanismo de ligação, autenticação e gestão de procura para o SMKI Repository — o repositório onde são alojados (lodged) Certificados e outra informação da SMKI, distinto das interfaces de emissão de Certificados cobertas pelo SEC Appendix M/N.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection (SEC Appendix P)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html#propósito",
+    "href": "documents/smki-repository-coc.html#propósito",
+    "title": "SMKI Repository Code of Connection (SEC Appendix P)",
+    "section": "",
+    "text": "Documento produzido nos termos da Secção L6.5 do SEC: define o mecanismo de ligação, autenticação e gestão de procura para o SMKI Repository — o repositório onde são alojados (lodged) Certificados e outra informação da SMKI, distinto das interfaces de emissão de Certificados cobertas pelo SEC Appendix M/N.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection (SEC Appendix P)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html#estrutura-do-documento",
+    "href": "documents/smki-repository-coc.html#estrutura-do-documento",
+    "title": "SMKI Repository Code of Connection (SEC Appendix P)",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\n1. Connection Mechanism — utilizadores com DCC Gateway Connection ligam-se ao SMKI Repository via essa ligação, com credenciais próprias; sem DCC Gateway Connection, o acesso ao conteúdo é feito por contacto com o Service Desk (visita, e-mail, carta assinada, telefone), entrega via CD/DVD/e-mail, ou via SMKI Portal pela Internet.\n\n1.3 Lodging Information — só AROs (agindo em nome da SMKI PMA ou do Code Administrator) podem lodge informação no Repository, após autenticação da identidade contra o ARO Nomination Form.\n\n2. SMKI Repository interfaces — secção 2.1 “Not used”; 2.2 cobre o acesso ao conteúdo para utilizadores sem DCC Gateway Connection (ver acima).\n3. Authentication — utilizadores com DCC Gateway Connection recebem username/password (SMKI RAPP); password deve ser alterada no primeiro login; bloqueio automático de conta por 1h após 5 tentativas falhadas num período de 1h, com desbloqueio manual via Service Desk mediante verificação de identidade da ARO.\n4. Managing Demand — cada utilizador com DCC Gateway Connection tem de fornecer uma previsão (forecast) razoável do número de certificados que espera obter, e não deve exceder 120% dessa previsão; excesso sustentado deve ser comunicado ao Service Desk.\n\n4.1 Error Responses — em caso de falha de serviço/infraestrutura, pode não ser possível gerar/entregar uma mensagem de erro do SMKI Repository Interface.\n\nAppendix A — templates de previsão de uso (Usage Forecast, SFTP Full Download Forecast, % de previsão diária por período: Off Peak/Core/Non-Core).\nAppendix B Definitions — API Key (chave usada para identificar o utilizador da SMKI Repository Web Service interface).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection (SEC Appendix P)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-repository-coc.html#fonte",
+    "href": "documents/smki-repository-coc.html#fonte",
+    "title": "SMKI Repository Code of Connection (SEC Appendix P)",
+    "section": "Fonte",
+    "text": "Fonte\nSEC-Appendix-P-SMKI-Repository-Code-of-Connection-v3.0.pdf",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Repository Code of Connection (SEC Appendix P)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html",
+    "href": "documents/smki-coc.html",
+    "title": "SMKI Code of Connection (SEC Appendix N)",
+    "section": "",
+    "text": "Documento produzido nos termos da Secção L4.5 do SEC: define o mecanismo de ligação (connection mechanism), autenticação e gestão de procura (demand management) para as quatro interfaces de SMKI Services, complementando a especificação técnica das interfaces dada pelo SEC Appendix M (SMKI Interface Design Specification).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection (SEC Appendix N)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html#propósito",
+    "href": "documents/smki-coc.html#propósito",
+    "title": "SMKI Code of Connection (SEC Appendix N)",
+    "section": "",
+    "text": "Documento produzido nos termos da Secção L4.5 do SEC: define o mecanismo de ligação (connection mechanism), autenticação e gestão de procura (demand management) para as quatro interfaces de SMKI Services, complementando a especificação técnica das interfaces dada pelo SEC Appendix M (SMKI Interface Design Specification).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection (SEC Appendix N)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html#estrutura-do-documento",
+    "href": "documents/smki-coc.html#estrutura-do-documento",
+    "title": "SMKI Code of Connection (SEC Appendix N)",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\n1. Connection Mechanism — só Authorised Responsible Officers (AROs) com credenciais IKI emitidas segundo a SMKI RAPP podem acedes aos SMKI Services. Parties/RDPs com DCC Gateway Connection devem usá-la; sem ela, podem ligar-se via Internet.\n\n1.1 Browser Policy — a DCC publica e mantém atualizada a lista de browsers/versões e sistemas operativos suportados para o SMKI Portal interface via DCC Gateway Connection.\n\n2. SMKI Services interfaces — as quatro interfaces (SMKI Portal via DCC Gateway Connection, Ad Hoc Device CSR Web Service, Batched Device CSR Web Service) permitem submeter Organisation CSRs, Ad Hoc Device CSRs e Batched CSRs e recuperar os Certificados correspondentes.\n\n2.3 Authentication — o SMKI Portal via DCC Gateway Connection é protegido por sessão TLS mutuamente autenticada; requer instalação de “Authentication Client software” (assinado digitalmente, validado contra o Windows Trusted Root store) e um Cryptographic Credential Token protegido por PIN contendo o Certificado IKI e a chave privada da ARO. As Web Services (Ad Hoc e Batched) usam a mesma sessão TLS mutuamente autenticada com Certificado IKI próprio.\n\n3. Managing Demand — limites de capacidade:\n\nBatched CSRs: processados overnight (20:00–08:00), capacidade total de 375.000 CSRs/dia across todos os Authorised Subscribers; acima de 50.000 CSRs/24h por Party requer aviso prévio de 7 dias ao Service Desk.\nAd Hoc Device CSRs via DCC Gateway Connection: limite de 150 CSRs/24h por Party sem acordo prévio.\nAd Hoc Device CSR Web Service: 1 CSR por 0.8s em horas core (07:00–20:00) e 1 CSR por 4s fora desse período.\nBatched Device CSR Web Service: resposta síncrona obrigatória antes de submeter novo Batched CSR; regras específicas de janela horária para acesso ao ficheiro de resposta (varia se submetido antes ou depois das 20:00).\n\nAppendix A Definitions — Ad Hoc Device CSR, Authentication Client, Batched CSR, One Way Authentication, SMKI User Guide.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection (SEC Appendix N)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-coc.html#fonte",
+    "href": "documents/smki-coc.html#fonte",
+    "title": "SMKI Code of Connection (SEC Appendix N)",
+    "section": "Fonte",
+    "text": "Fonte\nSEC-Appendix-N-SMKI-Code-of-Connection-v4.0.pdf",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Code of Connection (SEC Appendix N)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html",
+    "href": "documents/gb-companion.html",
+    "title": "Great Britain Companion Specification (SEC Schedule 8 / GBCS)",
+    "section": "",
+    "text": "A GBCS (Great Britain Companion Specification), SEC Schedule 8, é a especificação técnica que define a implementação única e consistente das Mensagens (Messages) trocadas entre Devices de smart metering (ESME, GSME, Communications Hub/CHF, PPMID, HCALCS, SAPC, IHDs) e entre esses Devices e organizações remotas (Remote Parties, ex.: Suppliers, Network Operators). Alinha-se com DLMS COSEM (Green/Blue Books) e ZigBee Smart Energy Profile (ZSE), e é referenciada pelas Technical Specifications de cada tipo de Device (GSMETS, ESMETS, CHTS, HCALCSTS, PPMIDTS, IHDTS, SAPCTS) como o documento que estas devem cumprir. Documento muito extenso e altamente técnico (~400 páginas); esta página sintetiza a estrutura de alto nível, sem reproduzir o detalhe normativo de cada Use Case/formato de mensagem.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "Great Britain Companion Specification (SEC Schedule 8 / GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html#propósito",
+    "href": "documents/gb-companion.html#propósito",
+    "title": "Great Britain Companion Specification (SEC Schedule 8 / GBCS)",
+    "section": "",
+    "text": "A GBCS (Great Britain Companion Specification), SEC Schedule 8, é a especificação técnica que define a implementação única e consistente das Mensagens (Messages) trocadas entre Devices de smart metering (ESME, GSME, Communications Hub/CHF, PPMID, HCALCS, SAPC, IHDs) e entre esses Devices e organizações remotas (Remote Parties, ex.: Suppliers, Network Operators). Alinha-se com DLMS COSEM (Green/Blue Books) e ZigBee Smart Energy Profile (ZSE), e é referenciada pelas Technical Specifications de cada tipo de Device (GSMETS, ESMETS, CHTS, HCALCSTS, PPMIDTS, IHDTS, SAPCTS) como o documento que estas devem cumprir. Documento muito extenso e altamente técnico (~400 páginas); esta página sintetiza a estrutura de alto nível, sem reproduzir o detalhe normativo de cada Use Case/formato de mensagem.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "Great Britain Companion Specification (SEC Schedule 8 / GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html#estrutura-do-documento",
+    "href": "documents/gb-companion.html#estrutura-do-documento",
+    "title": "Great Britain Companion Specification (SEC Schedule 8 / GBCS)",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\n1–2. Introduction / Structure — GBCS é maioritariamente normativo (secções não marcadas “informative” são normativas); Devices no âmbito incluem ESME, GSME, CHF/Communications Hub, GPF, SAPC, PPMID, HCALCS e Type 2 Devices (ex.: IHDs).\n3. Scope and Terminology — define os conceitos centrais: uma Message é sempre Command, Response, Alert ou (só dentro do SMHAN) HAN Only Message; mensagens entre um Device e uma organização são Remote Party Messages; uma organização com credenciais já guardadas no Device é um Known Remote Party (KRP), caso contrário é Unknown Remote Party (URP) (comandos de Response a um URP passam sempre pelo Access Control Broker do Device). Convenções notacionais (numeração hex/bin, endianness big/little, concatenação ||, GeneralizedTime) também definidas aqui.\n4. Security — proteções criptográficas comuns a toda Message (integridade + autenticidade; Critical Messages acrescentam não-repúdio; certos campos exigem confidencialidade). Devices (exceto Type 2) têm pares de chave pública/privada e “Trust Anchor Cells” para guardar credenciais de Remote Parties. Um único Originator Counter por organização (não por Device) suporta a Protection Against Replay.\n5–6. Message construction / Message Categories — hierarquia de categorias de mensagem: SME.C (Command a um Device) com subcategorias SME.C.C (Critical), SME.C.NC (Non-Critical) e SME.C.PPMID-GSME; e SME.A (Alert de um Device) com subcategorias SME.A.C/SME.A.NC. Cada categoria acrescenta requisitos de proteção/verificação aos da categoria-mãe.\n7–8. Message structure / Encryption of Attributes — requisitos de construção de mensagem ao nível DLMS COSEM, ZSE e ASN.1; derivação de chaves e AAD/plaintext/ciphertext para acesso a atributos sensíveis via COSEM e ZSE.\n9. Time Synchronisation and Future Dated Remote Party Messages.\n10. ZSE Implementation — tunnels, interação GSME/GPF, Hand Held Terminal (HHT), requisitos Sub GHz, gestão do SMHAN, VWD.\n11. Downloading firmware images to Devices — Use Cases CS05a–CS09 (distribuição e ativação de firmware para Communications Hub, ESME/GSME/HCALCS, PPMID).\n12. Requirements for Certificates — requisitos aplicáveis a todos os Certificados, a Organisation Certificates, a Certificados com RemotePartyRole = root/issuingAuthority, e a Device Certificates — ponto de contacto direto com a SMKI, que é quem emite estes Certificados.\n13. Managing Security Credentials on Devices — Use Cases CS02a–CS02g (fornecer, atualizar e emitir credenciais de segurança em Devices/Load Controllers), incl. Pair-wise Authorisation e backup/restore de log via GPF.\n14. Apply Prepayment Top Up — Use Cases CS01a/CS01b e variantes com intervenção do consumidor (código numérico no Device ou num PPMID); cálculo/verificação do dígito de verificação do UTRN.\n15. Message Codes / 16. Event / Alert Codes — códigos únicos por Remote Party Message (Secção 3.2) e códigos de Event/Alert.\n17. Remote Party Usage Rights — direitos de acesso a atributos/métodos e a Use Cases por Remote Party.\n18. Message Templates — templates GBZ/ZSE e DLMS COSEM, instanciação ilustrativa e vetores de teste criptográficos.\n19–20. Use Cases / Mapping Table.\n21. Glossary — glossário próprio da GBCS (termos capitalizados definidos ao longo do documento remetem para aqui).\n22–25. Annexes — classe DLMS adicional (Annex 1); Annexes 2–3 intencionalmente em branco; uso do ZigBee na GBCS (Annex 4, informativo).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "Great Britain Companion Specification (SEC Schedule 8 / GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html#nota-de-confiança",
+    "href": "documents/gb-companion.html#nota-de-confiança",
+    "title": "Great Britain Companion Specification (SEC Schedule 8 / GBCS)",
+    "section": "Nota de confiança",
+    "text": "Nota de confiança\nSíntese estrutural baseada na leitura das Secções 1–4.2 (introdução, scope, terminologia, início de security) e nos títulos/organização do resto do documento (TOC). O detalhe normativo de Message Categories (Secção 6), formatos de mensagem (7–8, 18), Use Cases (11, 13, 14, 19) e o Glossário (21) não foi lido exaustivamente — confidence-score reflete isto. Perguntas sobre um Use Case, formato de mensagem ou código de erro específico devem ir à fonte primária.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "Great Britain Companion Specification (SEC Schedule 8 / GBCS)"
+    ]
+  },
+  {
+    "objectID": "documents/gb-companion.html#fonte",
+    "href": "documents/gb-companion.html#fonte",
+    "title": "Great Britain Companion Specification (SEC Schedule 8 / GBCS)",
+    "section": "Fonte",
+    "text": "Fonte\nSEC-Schedule-8-GB-Companion-Specification-v4.4 1.pdf",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "Great Britain Companion Specification (SEC Schedule 8 / GBCS)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html",
+    "href": "concepts/smki.html",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "",
+    "text": "A SMKI (Smart Meter Key Infrastructure) é a infraestrutura de PKI (Public Key Infrastructure) do SEC que emite e gere Certificados para Organisations e Devices na rede de smart metering do Reino Unido. Três apêndices do SEC cobrem, em conjunto, o desenho técnico, o código de ligação e o repositório da SMKI:\n\nSMKI Interface Design Specification (Appendix M) — especifica os protocolos e estruturas técnicas das quatro interfaces (SMKI Portal via DCC Gateway Connection, SMKI Portal via Internet, Ad Hoc Device CSR Web Service, Batched Device CSR Web Service): formato PKCS#10 das CSRs, cifras TLS, schemas XML de request/response.\nSMKI Code of Connection (Appendix N) — define quem pode ligar-se (só AROs com credenciais IKI), como se autenticam (Authentication Client software + Cryptographic Credential Token protegido por PIN) e os limites de capacidade/demand management de cada interface.\nSMKI Repository Code of Connection (Appendix P) — cobre um sistema relacionado mas distinto: o repositório onde Certificados e outra informação da SMKI são lodged/consultados, com o seu próprio mecanismo de autenticação (username/password) e gestão de procura (forecast + limite de 120%).",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#síntese",
+    "href": "concepts/smki.html#síntese",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "",
+    "text": "A SMKI (Smart Meter Key Infrastructure) é a infraestrutura de PKI (Public Key Infrastructure) do SEC que emite e gere Certificados para Organisations e Devices na rede de smart metering do Reino Unido. Três apêndices do SEC cobrem, em conjunto, o desenho técnico, o código de ligação e o repositório da SMKI:\n\nSMKI Interface Design Specification (Appendix M) — especifica os protocolos e estruturas técnicas das quatro interfaces (SMKI Portal via DCC Gateway Connection, SMKI Portal via Internet, Ad Hoc Device CSR Web Service, Batched Device CSR Web Service): formato PKCS#10 das CSRs, cifras TLS, schemas XML de request/response.\nSMKI Code of Connection (Appendix N) — define quem pode ligar-se (só AROs com credenciais IKI), como se autenticam (Authentication Client software + Cryptographic Credential Token protegido por PIN) e os limites de capacidade/demand management de cada interface.\nSMKI Repository Code of Connection (Appendix P) — cobre um sistema relacionado mas distinto: o repositório onde Certificados e outra informação da SMKI são lodged/consultados, com o seu próprio mecanismo de autenticação (username/password) e gestão de procura (forecast + limite de 120%).",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#pontos-chave-cross-documento",
+    "href": "concepts/smki.html#pontos-chave-cross-documento",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "Pontos-chave cross-documento",
+    "text": "Pontos-chave cross-documento\n\nInterfaces vs. Repository são sistemas distintos com autenticação diferente: as interfaces de emissão de Certificados (Portal/Ad Hoc/Batched) usam TLS mutuamente autenticado com Certificado IKI num Cryptographic Credential Token; o SMKI Repository Portal usa username/password tradicional (Appendix P, Secção 3.1).\nSó AROs (Authorised Responsible Officers) podem operar em nome de uma organização em qualquer uma das três frentes — credenciais emitidas segundo o processo da SMKI RAPP (referenciado, mas não incluído, nestes três apêndices).\nGestão de capacidade tem números concretos e específicos por canal: 375.000 Batched CSRs/ dia (SMKI Services, Appendix N), 150 Ad Hoc CSRs/24h por Party (Appendix N), 120% da previsão declarada para o Repository (Appendix P) — não confundir os limites de um documento com os de outro.\nDCC Gateway Connection é o caminho preferencial em todas as três frentes; acesso via Internet (sem DCC Gateway Connection) existe como alternativa com fluxo de autenticação próprio em cada caso.\nA GBCS (SEC Schedule 8) consome Certificados emitidos pela SMKI, sem os emitir ela própria: a Secção 12 da GB Companion Specification define requisitos que os Certificados (incl. Device Certificates e Certificados com RemotePartyRole = root/ issuingAuthority) têm de cumprir para serem processados por um Device — a emissão/gestão desses Certificados continua a ser definida pelos três apêndices SMKI acima, não pela GBCS.\n\nNota de crescimento: esta página agrega agora 4 fontes distintas (Appendix M, N, P e Schedule 8) — o limite indicado em CLAUDE.md antes de considerar subdividir. Uma 5ª fonte deve disparar a divisão em sub-secções com âncoras ou em páginas mais finas.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/smki.html#fonte",
+    "href": "concepts/smki.html#fonte",
+    "title": "SMKI (Smart Meter Key Infrastructure)",
+    "section": "Fonte",
+    "text": "Fonte\nSíntese derivada de: documents/smki-interface-design.qmd, documents/smki-coc.qmd, documents/smki-repository-coc.qmd, documents/gb-companion.qmd (Secção 12, requisitos de Certificados).",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "SMKI (Smart Meter Key Infrastructure)"
+    ]
+  },
+  {
+    "objectID": "concepts/duis-messaging.html",
+    "href": "concepts/duis-messaging.html",
+    "title": "DUIS — Modelo de Mensagens do DCC User Interface",
+    "section": "",
+    "text": "O modelo de mensagens do DUIS (DCC User Interface Specification, SEC Appendix AD) organiza- se em torno de três Web Services e de um conjunto de “Messaging Features” que determinam como cada Service Request é entregue a um Device e como a resposta volta ao User.\n\n\n\n\n\n\n\n\n\n\nWeb Service\nPadrão\nUso\n\n\n\n\nTransform Service\nSíncrono\nCritical Service Requests → transformação para formato GBCS, devolve Pre-Command para assinatura digital pelo User (SMETS2+); para SMETS1, devolve um Acknowledgement\n\n\nNon-Device Service\nSíncrono\nService Requests que não envolvem comunicação com um Device, ou pedidos de Local Command Service\n\n\nSend Command Service\nAssíncrono\nNon-Critical Service Requests ou Signed Pre-Commands, para envio de Command ao Device\n\n\n\nCada User implementa ainda um Receive Response Service próprio para receber Service Responses, Device Alerts e DCC Alerts — com Acknowledgement síncrono obrigatório; a ausência de Acknowledgement dispara retry pelo DCC (podendo gerar mensagens duplicadas).\n\n\n\nCada Service Request declara um Command Variant (CV) que combina: Web Service a usar, padrão de entrega (síncrono/assíncrono), se é “Critical” (requer Pre-Command assinado) e se retorna ao User via SM WAN. As “Messaging Features” que um CV pode expressar são: Transform, On-Demand, Non-Device Requests, Future Dated Response Pattern (variante Device — o próprio Device agenda a execução — ou variante DSP — o DCC retém e envia mais tarde), Meter Scheduled (o Device mantém um agendamento recorrente), DCC Scheduled (o User cria um Schedule no DCC), e os dois canais de mensagens não solicitadas: Device Alerts e DCC Alerts.\n\n\n\nTodo Service Request/Signed Pre-Command passa por cinco estágios sequenciais, todos obrigatórios:\n\nCommunications Authentication — sessão TLS válida com certificado DCCKI.\nXSD Validation — conformidade com o DUIS XML Schema.\nRequest Authentication — assinatura com chave privada de User Role emitida pela SMKI.\nRequest Authorisation — User é SEC party ativo e o User Role tem direitos sobre o Device visado.\nData Validation — completude/validade dos dados do Service Request.\n\nIsto liga o DUIS diretamente à SMKI: a validade das credenciais SMKI (Organisation Certificate, User Role Signing Private Key) é uma pré-condição para qualquer mensagem DUIS ser aceite — mas o DUIS (Appendix AD) e a SMKI (Appendix M/N/P) são especificados em documentos distintos e não devem ser confundidos: a SMKI emite e gere os certificados; o DUIS consome-os para autenticar e autorizar mensagens.\n\n\n\nO payload que o DUIS transporta como resultado de um Service Request “from Device” — o formato GBCSPayload referido na Secção 3.5.6 do DUIS — é construído segundo as regras da GB Companion Specification (GBCS, SEC Schedule 8): é a GBCS que define a hierarquia de categorias de mensagem (SME.C/SME.A e subcategorias), a construção Command/Response/Alert e as proteções criptográficas aplicadas a cada Message. O DUIS especifica como uma mensagem GBCS chega ao/do DCC (Web Services, Command Variants, Access Control); a GBCS especifica o que está dentro dessa mensagem e como o Device a processa. Não duplicar a definição de Message Category aqui — ver a página da GBCS para o detalhe.\n\n\n\nUma mensagem que sai de um User passa por três mecanismos de credenciais distintos, não um só — é fácil confundi-los:\n\nTransporte (DUIS, User↔︎DCC): sessão TLS mutuamente autenticada com certificados DCCKI (DCC Key Infrastructure) — protege a ligação, não a mensagem.\nAssinatura do Service Request (DUIS, User↔︎DCC): o Service Request/Signed Pre-Command é assinado com uma User Role Signing Private Key emitida sob a SMKI (não a DCCKI) — Secção 3.2 “Request Authentication” e 3.3 “DUIS XML Service Request Signing” de documents/dcc-user-interface.qmd. O DCC também assina as suas respostas (“DCC Signed Service Responses”). Isto só ocorre depois das 5 fases de Access Control descritas acima.\nProteção da Message (GBCS, DCC↔︎Device): depois de transformada em formato GBCS, aplica-se um conjunto de proteções independente do anterior (documents/gb-companion.qmd, Secção 4): toda Message tem integridade + autenticidade; Critical Messages acrescentam não-repúdio; certos campos exigem confidencialidade (cifragem). Devices (exceto Type 2) têm o seu próprio par de chave pública/privada e guardam credenciais de Remote Parties conhecidas em Trust Anchor Cells — um mecanismo de confiança à parte do TLS/DCCKI e da assinatura SMKI da DUIS. Um Originator Counter por organização protege contra replay.\n\nOs Certificados que sustentam os passos 2 e 3 (Organisation Certificates, Device Certificates) são emitidos pela SMKI, não pela DUIS nem pela GBCS — ambas os consomem. A DCCKI (passo 1) é uma PKI diferente da SMKI/IKI — não confundir as duas.\nNota de confiança: a cadeia do lado DUIS (passos 1–2) tem boa cobertura na wiki. Do lado GBCS (passo 3), a existência e categorias de proteção está confirmada, mas documents/gb-companion.qmd tem confidence-score: 0.6 e a Secção 4.3 desse documento (algoritmos criptográficos e parâmetros exatos) não foi lida em detalhe — não é possível, com a wiki atual, confirmar que algoritmo/tamanho de chave a GBCS usa para a cifragem.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "DUIS — Modelo de Mensagens do DCC User Interface"
+    ]
+  },
+  {
+    "objectID": "concepts/duis-messaging.html#síntese",
+    "href": "concepts/duis-messaging.html#síntese",
+    "title": "DUIS — Modelo de Mensagens do DCC User Interface",
+    "section": "",
+    "text": "O modelo de mensagens do DUIS (DCC User Interface Specification, SEC Appendix AD) organiza- se em torno de três Web Services e de um conjunto de “Messaging Features” que determinam como cada Service Request é entregue a um Device e como a resposta volta ao User.\n\n\n\n\n\n\n\n\n\n\nWeb Service\nPadrão\nUso\n\n\n\n\nTransform Service\nSíncrono\nCritical Service Requests → transformação para formato GBCS, devolve Pre-Command para assinatura digital pelo User (SMETS2+); para SMETS1, devolve um Acknowledgement\n\n\nNon-Device Service\nSíncrono\nService Requests que não envolvem comunicação com um Device, ou pedidos de Local Command Service\n\n\nSend Command Service\nAssíncrono\nNon-Critical Service Requests ou Signed Pre-Commands, para envio de Command ao Device\n\n\n\nCada User implementa ainda um Receive Response Service próprio para receber Service Responses, Device Alerts e DCC Alerts — com Acknowledgement síncrono obrigatório; a ausência de Acknowledgement dispara retry pelo DCC (podendo gerar mensagens duplicadas).\n\n\n\nCada Service Request declara um Command Variant (CV) que combina: Web Service a usar, padrão de entrega (síncrono/assíncrono), se é “Critical” (requer Pre-Command assinado) e se retorna ao User via SM WAN. As “Messaging Features” que um CV pode expressar são: Transform, On-Demand, Non-Device Requests, Future Dated Response Pattern (variante Device — o próprio Device agenda a execução — ou variante DSP — o DCC retém e envia mais tarde), Meter Scheduled (o Device mantém um agendamento recorrente), DCC Scheduled (o User cria um Schedule no DCC), e os dois canais de mensagens não solicitadas: Device Alerts e DCC Alerts.\n\n\n\nTodo Service Request/Signed Pre-Command passa por cinco estágios sequenciais, todos obrigatórios:\n\nCommunications Authentication — sessão TLS válida com certificado DCCKI.\nXSD Validation — conformidade com o DUIS XML Schema.\nRequest Authentication — assinatura com chave privada de User Role emitida pela SMKI.\nRequest Authorisation — User é SEC party ativo e o User Role tem direitos sobre o Device visado.\nData Validation — completude/validade dos dados do Service Request.\n\nIsto liga o DUIS diretamente à SMKI: a validade das credenciais SMKI (Organisation Certificate, User Role Signing Private Key) é uma pré-condição para qualquer mensagem DUIS ser aceite — mas o DUIS (Appendix AD) e a SMKI (Appendix M/N/P) são especificados em documentos distintos e não devem ser confundidos: a SMKI emite e gere os certificados; o DUIS consome-os para autenticar e autorizar mensagens.\n\n\n\nO payload que o DUIS transporta como resultado de um Service Request “from Device” — o formato GBCSPayload referido na Secção 3.5.6 do DUIS — é construído segundo as regras da GB Companion Specification (GBCS, SEC Schedule 8): é a GBCS que define a hierarquia de categorias de mensagem (SME.C/SME.A e subcategorias), a construção Command/Response/Alert e as proteções criptográficas aplicadas a cada Message. O DUIS especifica como uma mensagem GBCS chega ao/do DCC (Web Services, Command Variants, Access Control); a GBCS especifica o que está dentro dessa mensagem e como o Device a processa. Não duplicar a definição de Message Category aqui — ver a página da GBCS para o detalhe.\n\n\n\nUma mensagem que sai de um User passa por três mecanismos de credenciais distintos, não um só — é fácil confundi-los:\n\nTransporte (DUIS, User↔︎DCC): sessão TLS mutuamente autenticada com certificados DCCKI (DCC Key Infrastructure) — protege a ligação, não a mensagem.\nAssinatura do Service Request (DUIS, User↔︎DCC): o Service Request/Signed Pre-Command é assinado com uma User Role Signing Private Key emitida sob a SMKI (não a DCCKI) — Secção 3.2 “Request Authentication” e 3.3 “DUIS XML Service Request Signing” de documents/dcc-user-interface.qmd. O DCC também assina as suas respostas (“DCC Signed Service Responses”). Isto só ocorre depois das 5 fases de Access Control descritas acima.\nProteção da Message (GBCS, DCC↔︎Device): depois de transformada em formato GBCS, aplica-se um conjunto de proteções independente do anterior (documents/gb-companion.qmd, Secção 4): toda Message tem integridade + autenticidade; Critical Messages acrescentam não-repúdio; certos campos exigem confidencialidade (cifragem). Devices (exceto Type 2) têm o seu próprio par de chave pública/privada e guardam credenciais de Remote Parties conhecidas em Trust Anchor Cells — um mecanismo de confiança à parte do TLS/DCCKI e da assinatura SMKI da DUIS. Um Originator Counter por organização protege contra replay.\n\nOs Certificados que sustentam os passos 2 e 3 (Organisation Certificates, Device Certificates) são emitidos pela SMKI, não pela DUIS nem pela GBCS — ambas os consomem. A DCCKI (passo 1) é uma PKI diferente da SMKI/IKI — não confundir as duas.\nNota de confiança: a cadeia do lado DUIS (passos 1–2) tem boa cobertura na wiki. Do lado GBCS (passo 3), a existência e categorias de proteção está confirmada, mas documents/gb-companion.qmd tem confidence-score: 0.6 e a Secção 4.3 desse documento (algoritmos criptográficos e parâmetros exatos) não foi lida em detalhe — não é possível, com a wiki atual, confirmar que algoritmo/tamanho de chave a GBCS usa para a cifragem.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "DUIS — Modelo de Mensagens do DCC User Interface"
+    ]
+  },
+  {
+    "objectID": "concepts/duis-messaging.html#fonte",
+    "href": "concepts/duis-messaging.html#fonte",
+    "title": "DUIS — Modelo de Mensagens do DCC User Interface",
+    "section": "Fonte",
+    "text": "Fonte\nSíntese derivada de documents/dcc-user-interface.qmd (Secções 2.1–2.6, 3.2–3.3) e de documents/gb-companion.qmd (Secção 3, relação GBCSPayload/Message Category; Secção 4, cadeia de segurança ponta-a-ponta), e de concepts/smki.qmd (emissão de Certificados). O catálogo de Service Requests individuais (Secção 3.8 do DUIS) e o detalhe normativo de Message Categories e de algoritmos criptográficos (Secções 4.3/6 da GBCS) não estão cobertos por esta síntese.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "DUIS — Modelo de Mensagens do DCC User Interface"
+    ]
+  },
+  {
+    "objectID": "concepts/capacity-management.html",
+    "href": "concepts/capacity-management.html",
+    "title": "Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)",
+    "section": "",
+    "text": "Página cristalizada a partir de uma pergunta /query que cruzou os limites de capacidade e gestão de procura (rate limits, forecasts, janelas horárias) declarados para as interfaces SMKI e para o DCC User Interface (DUIS). Não existia nenhuma página que fizesse esta comparação — concepts/smki.qmd documenta os limites da SMKI mas não os compara com o DUIS.\n\n\nModelo de rate limits fixos por canal:\n\n\n\n\n\n\n\nCanal\nLimite\n\n\n\n\nBatched CSRs (capacidade total do sistema)\n375.000 CSRs/dia, processados 20:00–08:00; submetidos antes das 20:00 são processados até às 08:00 do dia seguinte\n\n\nBatched CSRs por Party\nacima de 50.000 CSRs/24h requer aviso prévio de 7 dias ao Service Desk\n\n\nAd Hoc Device CSRs via DCC Gateway Connection\n150 CSRs/24h por Party sem acordo prévio\n\n\nAd Hoc Device CSR Web Service\n1 CSR por 0.8s em horas core (07:00–20:00); 1 CSR por 4s fora desse período\n\n\nBatched Device CSR Web Service\nresposta síncrona obrigatória antes de submeter o Batched CSR seguinte; janelas de acesso ao ficheiro de resposta distintas conforme submissão antes/depois das 20:00\n\n\n\n\n\n\nModelo diferente, baseado em forecast declarado pelo utilizador, não em rate limits fixos: cada DCC Gateway Connection user declara uma previsão de uso e não deve exceder 120% dessa previsão; a previsão é desagregada por janela horária (Off Peak 00:00–07:00 / Core 07:00–08:00 / Non-Core 08:00–20:00–00:00) e por tipo de acesso (Portal, Web Service, SFTP delta/full).\n\n\n\nA wiki não tem, neste momento, valores concretos de capacidade/rate limit para o DUIS. documents/dcc-user-interface.qmd refere a existência de uma Service Request Matrix (Secção 3.1) e de Target Response Times (Secção 3.7) no documento original, mas a própria página assinala explicitamente (na sua “Nota de confiança”) que estas secções não foram lidas exaustivamente na ingestão — não há números capturados. Esta página fica como marcador dessa lacuna: para responder com números reais a “qual o rate limit/target response time de um Service Request DUIS”, é preciso primeiro reforçar a ingestão de documents/dcc-user-interface.qmd (Secções 3.1 e 3.7).\n\n\n\nNão é possível, com a wiki atual, dizer se o DUIS é mais ou menos permissivo que a SMKI em termos de capacidade — são modelos de gestão de procura estruturalmente diferentes (rate limits fixos vs. forecast percentual), e falta o dado numérico do lado DUIS. Qualquer resposta a essa pergunta antes de resolver a lacuna acima seria inferência, não facto da fonte.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)"
+    ]
+  },
+  {
+    "objectID": "concepts/capacity-management.html#síntese",
+    "href": "concepts/capacity-management.html#síntese",
+    "title": "Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)",
+    "section": "",
+    "text": "Página cristalizada a partir de uma pergunta /query que cruzou os limites de capacidade e gestão de procura (rate limits, forecasts, janelas horárias) declarados para as interfaces SMKI e para o DCC User Interface (DUIS). Não existia nenhuma página que fizesse esta comparação — concepts/smki.qmd documenta os limites da SMKI mas não os compara com o DUIS.\n\n\nModelo de rate limits fixos por canal:\n\n\n\n\n\n\n\nCanal\nLimite\n\n\n\n\nBatched CSRs (capacidade total do sistema)\n375.000 CSRs/dia, processados 20:00–08:00; submetidos antes das 20:00 são processados até às 08:00 do dia seguinte\n\n\nBatched CSRs por Party\nacima de 50.000 CSRs/24h requer aviso prévio de 7 dias ao Service Desk\n\n\nAd Hoc Device CSRs via DCC Gateway Connection\n150 CSRs/24h por Party sem acordo prévio\n\n\nAd Hoc Device CSR Web Service\n1 CSR por 0.8s em horas core (07:00–20:00); 1 CSR por 4s fora desse período\n\n\nBatched Device CSR Web Service\nresposta síncrona obrigatória antes de submeter o Batched CSR seguinte; janelas de acesso ao ficheiro de resposta distintas conforme submissão antes/depois das 20:00\n\n\n\n\n\n\nModelo diferente, baseado em forecast declarado pelo utilizador, não em rate limits fixos: cada DCC Gateway Connection user declara uma previsão de uso e não deve exceder 120% dessa previsão; a previsão é desagregada por janela horária (Off Peak 00:00–07:00 / Core 07:00–08:00 / Non-Core 08:00–20:00–00:00) e por tipo de acesso (Portal, Web Service, SFTP delta/full).\n\n\n\nA wiki não tem, neste momento, valores concretos de capacidade/rate limit para o DUIS. documents/dcc-user-interface.qmd refere a existência de uma Service Request Matrix (Secção 3.1) e de Target Response Times (Secção 3.7) no documento original, mas a própria página assinala explicitamente (na sua “Nota de confiança”) que estas secções não foram lidas exaustivamente na ingestão — não há números capturados. Esta página fica como marcador dessa lacuna: para responder com números reais a “qual o rate limit/target response time de um Service Request DUIS”, é preciso primeiro reforçar a ingestão de documents/dcc-user-interface.qmd (Secções 3.1 e 3.7).\n\n\n\nNão é possível, com a wiki atual, dizer se o DUIS é mais ou menos permissivo que a SMKI em termos de capacidade — são modelos de gestão de procura estruturalmente diferentes (rate limits fixos vs. forecast percentual), e falta o dado numérico do lado DUIS. Qualquer resposta a essa pergunta antes de resolver a lacuna acima seria inferência, não facto da fonte.",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)"
+    ]
+  },
+  {
+    "objectID": "concepts/capacity-management.html#fonte",
+    "href": "concepts/capacity-management.html#fonte",
+    "title": "Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)",
+    "section": "Fonte",
+    "text": "Fonte\nSíntese derivada de: concepts/smki.qmd (síntese já existente dos limites SMKI), documents/smki-coc.qmd, documents/smki-repository-coc.qmd, documents/dcc-user-interface.qmd (só para confirmar a ausência de dados de capacidade extraídos — Secções 3.1/3.7 do documento original ainda não ingeridas em detalhe).",
+    "crumbs": [
+      "Concepts",
+      "Concepts",
+      "Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)"
+    ]
+  },
+  {
+    "objectID": "concepts/index.html",
+    "href": "concepts/index.html",
+    "title": "Concepts",
+    "section": "",
+    "text": "Páginas de síntese cross-documento por conceito ou entidade do domínio SEC. Cada página agrega factos de vários documents/*.qmd — ver related no front matter de cada página para as fontes citadas.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nstatus\n\n\n\nconfidence-score\n\n\n\nlast-verified\n\n\n\nlast-ingested\n\n\n\n\n\n\n\n\nDUIS — Modelo de Mensagens do DCC User Interface\n\n\nduis, dcc, messaging, gbcs\n\n\ndraft\n\n\n0.65\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nGestão de Capacidade e Procura (SMKI vs. DCC User Interface)\n\n\ncapacity-management, demand-management, smki, duis\n\n\ndraft\n\n\n0.55\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nSMKI (Smart Meter Key Infrastructure)\n\n\nsmki, pki, interface, code-of-connection\n\n\ndraft\n\n\n0.8\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Concepts",
+      "Concepts"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html",
+    "href": "documents/dcc-user-interface.html",
+    "title": "DCC User Interface Specification (SEC Appendix AD / DUIS)",
+    "section": "",
+    "text": "O DUIS (DCC User Interface Specification), produzido nos termos da Secção H3 do SEC, especifica os mecanismos, formatos, protocolos e outros detalhes técnicos necessários para os Users enviarem e receberem comunicações do/para o DCC através do DCC User Interface — a interface pela qual Suppliers, Network Operators e outros Users interagem com Devices (smart meters) via a rede DCC. Documento extenso (~350 páginas na fonte); esta página sintetiza a estrutura e os mecanismos-chave, sem reproduzir o catálogo completo de Service Requests.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (SEC Appendix AD / DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#propósito",
+    "href": "documents/dcc-user-interface.html#propósito",
+    "title": "DCC User Interface Specification (SEC Appendix AD / DUIS)",
+    "section": "",
+    "text": "O DUIS (DCC User Interface Specification), produzido nos termos da Secção H3 do SEC, especifica os mecanismos, formatos, protocolos e outros detalhes técnicos necessários para os Users enviarem e receberem comunicações do/para o DCC através do DCC User Interface — a interface pela qual Suppliers, Network Operators e outros Users interagem com Devices (smart meters) via a rede DCC. Documento extenso (~350 páginas na fonte); esta página sintetiza a estrutura e os mecanismos-chave, sem reproduzir o catálogo completo de Service Requests.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (SEC Appendix AD / DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#estrutura-do-documento",
+    "href": "documents/dcc-user-interface.html#estrutura-do-documento",
+    "title": "DCC User Interface Specification (SEC Appendix AD / DUIS)",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\n1. Introduction — propósito, estrutura do documento, termos definidos (Secção 1.3), e variações de tratamento para Devices SMETS1 (Secção 1.4) — SMETS1 tem regras de processamento, validação e Alerts distintas das versões SMETS posteriores.\n2. The Interface\n\n2.1 Connection Mechanisms — Enrolment/Communication/Local Command Services só são acessíveis via DCC Gateway Connection; ligação lógica protegida por TLS com certificados DCCKI (DCC Key Infrastructure) para autenticação mútua cliente/servidor (RFC 5246, TLS_RSA_WITH_AES_128_GCM_SHA256).\n2.3 Time — todos os timestamps em UTC, formato XML com sufixo Z, precisão ao centésimo de segundo condicionada ao tipo de Command (ASN.1 vs. DLMS COSEM/GBZ).\n2.4 Web Services — três Web Services para processar Service Requests/Signed Pre-Commands: Transform Service (síncrona, transforma Critical Service Requests em formato GBCS e devolve Pre-Commands para assinatura), Non-Device Service (síncrona, para Service Requests que não envolvem um Device), e Send Command Service (assíncrona, para Non-Critical Service Requests/Signed Pre-Commands). Cada User implementa também um Receive Response Service para receber Service Responses/Alerts.\n2.6 Messaging Features — modos de tratamento de Service Requests: Transform, On-Demand, Non-Device Requests, Future Dated Response Pattern (Device e DSP), Meter Scheduled, DCC Scheduled, Device Alerts, DCC Alerts. Cada Service Request declara um Command Variant (CV) que determina qual Web Service usar e o padrão de entrega (secção 2.6.1, tabela extensa de CVs 1–N).\n\n3. Messages Sent Over The Interface\n\n3.1 Service Request Matrix — mapeamento completo de Service Requests para User Roles elegíveis (secção muito extensa, não reproduzida aqui).\n3.2 Access Control — cinco estágios sequenciais aplicados a todo Service Request/Signed Pre-Command: Communications Authentication (TLS com certificado DCCKI) → XSD Validation → Request Authentication (assinatura com chave SMKI) → Request Authorisation (User Role tem direitos de acesso ao Device?) → Data Validation. Todos os cinco estágios têm de passar; falhas geram um Response/HTTP Response Code específico (ex.: E100 para falha de validação de certificado, E65 para Remote Party Role inválido, E1/E2 para falhas de autorização de User Role).\n3.3 Key Cryptographic Operations — assinatura XML de Service Requests (DUIS XML Service Request Signing), validação de assinatura de Transform Service Response, e assinatura de Service Responses pelo DCC.\n3.4–3.6 Requests/Responses/Alerts — formatos de Request, Acknowledgement, Service Response (incl. variantes PreCommand, LocalCommand, GBCSPayload, CINMessage, DSPScheduledMessage), Device Alerts e DCC Alerts.\n3.7 Target Response Times — prazos-alvo de resposta por tipo de Service Request/canal.\n3.8 Service Request Definitions — catálogo extenso (mais de 80 definições) de Service Requests individuais (ex.: Update Import Tariff, Update Payment Mode, Read Instantaneous Import Registers, Update Security Credentials, Set CHF Sub GHz Configuration), cada um com elementos primários/secundários, formato e regras de validação próprias — não enumerado individualmente nesta síntese; consultar o PDF de origem para o detalhe de um Service Request específico.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (SEC Appendix AD / DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#nota-de-confiança",
+    "href": "documents/dcc-user-interface.html#nota-de-confiança",
+    "title": "DCC User Interface Specification (SEC Appendix AD / DUIS)",
+    "section": "Nota de confiança",
+    "text": "Nota de confiança\nEsta página cobre com confiança a arquitetura de mensagens (Secções 1–3.3) a partir de leitura direta do texto convertido. As Secções 1.4 (variações SMETS1, ~15 páginas) e 3.8 (catálogo de Service Requests, a maior parte do documento) não foram lidas exaustivamente — a síntese acima é estrutural (títulos/organização), não um resumo de conteúdo de cada Service Request. Perguntas sobre um Service Request específico devem ir à fonte primária.",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (SEC Appendix AD / DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/dcc-user-interface.html#fonte",
+    "href": "documents/dcc-user-interface.html#fonte",
+    "title": "DCC User Interface Specification (SEC Appendix AD / DUIS)",
+    "section": "Fonte",
+    "text": "Fonte\nSEC-Appendix-AD-DCC-User-Interface-Specification-v5.4-6-November-2025.pdf",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "DCC User Interface Specification (SEC Appendix AD / DUIS)"
+    ]
+  },
+  {
+    "objectID": "documents/index.html",
+    "href": "documents/index.html",
+    "title": "Documents",
+    "section": "",
+    "text": "Uma página por PDF de origem em pdfs/. Cada página inclui metadata, um resumo e um link de volta ao artifact original.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nstatus\n\n\n\nconfidence-score\n\n\n\nlast-verified\n\n\n\nlast-ingested\n\n\n\n\n\n\n\n\nDCC User Interface Specification (SEC Appendix AD / DUIS)\n\n\nduis, dcc, messaging, gbcs, interface\n\n\ndraft\n\n\n0.75\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nGreat Britain Companion Specification (SEC Schedule 8 / GBCS)\n\n\ngbcs, security, messaging, dlms-cosem, zigbee, certificates\n\n\ndraft\n\n\n0.6\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nSMKI Code of Connection (SEC Appendix N)\n\n\nsmki, pki, code-of-connection, dcc-gateway, authentication\n\n\ndraft\n\n\n0.9\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nSMKI Interface Design Specification (SEC Appendix M)\n\n\nsmki, pki, interface, dcc-gateway\n\n\ndraft\n\n\n0.85\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nSMKI Repository Code of Connection (SEC Appendix P)\n\n\nsmki, repository, code-of-connection, dcc-gateway, authentication\n\n\ndraft\n\n\n0.9\n\n\n \n\n\n2026-07-27\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Documents",
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html",
+    "href": "documents/smki-interface-design.html",
+    "title": "SMKI Interface Design Specification (SEC Appendix M)",
+    "section": "",
+    "text": "Documento obrigatório sob a Secção L4 do SEC: especifica os detalhes técnicos das interfaces à SMKI (Smart Meter Key Infrastructure) disponíveis a Authorised Subscribers, incluindo protocolos, padrões técnicos e estruturas de mensagens. Cobre também a interpretação dos termos “sending” e “receipt” para efeitos de medição de Target Response Times (Secção L8.3 do SEC).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification (SEC Appendix M)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html#propósito",
+    "href": "documents/smki-interface-design.html#propósito",
+    "title": "SMKI Interface Design Specification (SEC Appendix M)",
+    "section": "",
+    "text": "Documento obrigatório sob a Secção L4 do SEC: especifica os detalhes técnicos das interfaces à SMKI (Smart Meter Key Infrastructure) disponíveis a Authorised Subscribers, incluindo protocolos, padrões técnicos e estruturas de mensagens. Cobre também a interpretação dos termos “sending” e “receipt” para efeitos de medição de Target Response Times (Secção L8.3 do SEC).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification (SEC Appendix M)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html#estrutura-do-documento",
+    "href": "documents/smki-interface-design.html#estrutura-do-documento",
+    "title": "SMKI Interface Design Specification (SEC Appendix M)",
+    "section": "Estrutura do documento",
+    "text": "Estrutura do documento\n\n1. Introduction — propósito do documento e definição de “sending”/“receipt” para cada uma das quatro vias de submissão (Ad Hoc Web Service, Batched Web Service, SMKI Portal via DCC Gateway Connection, Organisation CSR via Portal).\n2. SMKI interfaces — define as quatro interfaces disponibilizadas pela DCC:\n\nSMKI Portal interface (via DCC Gateway Connection): mecanismo assíncrono baseado em browser para submissão de Organisation CSRs e Device CSRs (ad hoc ou batch) por Authorised Responsible Officers (AROs). Usa HTTPS com TLS mutuamente autenticado, conforme com WCAG v2 nível AA, e só é acessível via DCC Gateway Connection.\nAd Hoc Device CSR Web Service interface — submissão síncrona de Device CSRs individuais por sistemas automatizados do Authorised Subscriber, via DCC Gateway Connection.\nBatched Device CSR Web Service interface — submissão de Batched CSRs (lotes) para Device Certificates, também via DCC Gateway Connection.\nTodas as CSRs seguem o padrão PKCS#10; salvo notificação imediata de rejeição pelo Authorised Subscriber, um Certificado é considerado aceite (Secções L11.5–L11.7 do SEC).\n\nAppendix A–B — mensagens e schema XML da Ad Hoc Device CSR Web Service interface (exemplos de request/response, incl. erros como “Incorrect XML”).\nAppendix C–E — submissão e recuperação de resultados via Batched Device CSR Web Service interface (mensagens, schema XML, valores de BatchStatus/Status).\nAppendix F — estrutura das Certificate Signing Requests (Organisation CSR e Device CSR).\nAppendix G — credenciais de autenticação: TLS com cifras ECDHE-RSA-AES256-GCM-SHA384 (e variantes), chaves de cliente/servidor RSA 2048 bit, hash SHA256; estrutura da CSR para Certificados IKI (client credentials) usados nas Web Services.\nAppendix H — definições de termos específicos deste apêndice (Ad Hoc/Batched Device CSR Web Service, ARO, CSR de Organização/Dispositivo, Portal).",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification (SEC Appendix M)"
+    ]
+  },
+  {
+    "objectID": "documents/smki-interface-design.html#fonte",
+    "href": "documents/smki-interface-design.html#fonte",
+    "title": "SMKI Interface Design Specification (SEC Appendix M)",
+    "section": "Fonte",
+    "text": "Fonte\nSEC-Appendix-M-SMKI-Interface-Design-Specification-v8.0.pdf",
+    "crumbs": [
+      "Documents",
+      "Documents",
+      "SMKI Interface Design Specification (SEC Appendix M)"
+    ]
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Termos e siglas usados nos documentos desta wiki. Cada entrada indica onde o termo é definido ou usado com mais detalhe.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#siglas-gerais",
+    "href": "glossary.html#siglas-gerais",
+    "title": "Glossary",
+    "section": "Siglas gerais",
+    "text": "Siglas gerais\nSEC — Smart Energy Code. O código regulatório do Reino Unido que rege o mercado de smart metering; contém os apêndices/schedules ingeridos nesta wiki (ex.: Appendix M, N, P, AD, Schedule 8).\nDCC — Data Communications Company. Entidade responsável por operar as interfaces e a infraestrutura de comunicação entre Users/Parties e os Devices de smart metering.\nRDP — Registered Data Provider. Ver documents/smki-coc.qmd, documents/smki-repository-coc.qmd.\nParty — Organização signatária do SEC (ex.: Supplier, Network Operator) com direitos e obrigações definidos no código.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#smki-ver-conceptssmki.qmd",
+    "href": "glossary.html#smki-ver-conceptssmki.qmd",
+    "title": "Glossary",
+    "section": "SMKI (ver concepts/smki.qmd)",
+    "text": "SMKI (ver concepts/smki.qmd)\nSMKI — Smart Meter Key Infrastructure. PKI do SEC que emite Certificados para Organisations e Devices.\nARO — Authorised Responsible Officer. Pessoa autorizada a atuar em nome de uma organização para operações SMKI (submissão de CSRs, lodging de informação no SMKI Repository).\nCSR — Certificate Signing Request. Pedido de emissão de Certificado; segue o padrão PKCS#10. Ver documents/smki-interface-design.qmd (Appendix F).\nIKI — Infrastructure Key Infrastructure (Certificado/CA usado para autenticação de sessões TLS mutuamente autenticadas nas interfaces SMKI). Ver documents/smki-interface-design.qmd, Appendix H.\nSMKI RAPP — SMKI Registration Authority Policies and Procedures. Processo referenciado nos três apêndices SMKI para emissão de credenciais IKI a AROs; não incluído como PDF nesta wiki.\nCryptographic Credential Token — dispositivo físico protegido por PIN que contém o Certificado IKI e a chave privada de uma ARO, usado para autenticação ao SMKI Portal.\nBatched CSR / Ad Hoc Device CSR — os dois modos de submissão de CSRs de Device (em lote vs. individual/síncrono). Ver documents/smki-interface-design.qmd, documents/smki-coc.qmd.\nSMKI Repository — repositório onde são lodged Certificados e outra informação da SMKI, distinto das interfaces de emissão de Certificados. Ver documents/smki-repository-coc.qmd.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#duis-dcc-user-interface-ver-conceptsduis-messaging.qmd",
+    "href": "glossary.html#duis-dcc-user-interface-ver-conceptsduis-messaging.qmd",
+    "title": "Glossary",
+    "section": "DUIS / DCC User Interface (ver concepts/duis-messaging.qmd)",
+    "text": "DUIS / DCC User Interface (ver concepts/duis-messaging.qmd)\nDUIS — DCC User Interface Specification (SEC Appendix AD). Especifica como Users enviam e recebem comunicações do/para o DCC.\nUser — organização (Supplier, Network Operator, etc.) que envia Service Requests ao DCC via o DCC User Interface.\nService Request — mensagem enviada por um User ao DCC para invocar uma operação sobre um Device ou sobre os DCC Systems.\nCommand Variant (CV) — atributo de um Service Request que determina qual Web Service usar e o padrão de entrega (síncrono/assíncrono, crítico/não-crítico).\nPre-Command — resultado da transformação de um Critical Service Request para formato GBCS, devolvido ao User para assinatura digital antes de ser enviado ao Device.\nDCCKI — DCC Key Infrastructure. Certificados usados para autenticação mútua TLS nas ligações ao DCC User Interface (distintos dos Certificados IKI da SMKI).\nKRP / URP — Known Remote Party / Unknown Remote Party. Classificação de uma organização remota consoante as suas credenciais já estarem ou não guardadas num Device. Ver documents/gb-companion.qmd, Secção 3.",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#gbcs-ver-documentsgb-companion.qmd",
+    "href": "glossary.html#gbcs-ver-documentsgb-companion.qmd",
+    "title": "Glossary",
+    "section": "GBCS (ver documents/gb-companion.qmd)",
+    "text": "GBCS (ver documents/gb-companion.qmd)\nGBCS — Great Britain Companion Specification (SEC Schedule 8). Especificação técnica das Mensagens entre Devices de smart metering e Remote Parties; alinhada com DLMS COSEM e ZSE.\nESME / GSME — Electricity / Gas Smart Metering Equipment.\nCHF — Communications Hub Function; GPF — Gas Proxy Function.\nPPMID — Prepayment Interface Device. HCALCS — HAN Connected Auxiliary Load Control Switch. SAPC — Standalone Auxiliary Proportional Controller. IHD — In Home Display (Type 2 Device).\nSMHAN — Smart Metering Home Area Network. Rede local entre Devices na mesma instalação.\nRemote Party Message — Message cujo emissor ou destinatário final não é um Device (em oposição a HAN Only Message, trocada só entre Devices).\nMessage Category — classificação hierárquica de uma Remote Party Message (SME.C para Commands, SME.A para Alerts, com subcategorias Critical/Non-Critical). Ver documents/gb-companion.qmd, Secção 6.\nZSE — ZigBee Smart Energy Profile. DLMS COSEM — protocolo de modelação de dados usado por ESME/SAPC, alinhado com os DLMS Green/Blue Books.\nUTRN — Unique Transaction Reference Number, usado nos fluxos de Prepayment Top Up (GBCS Secção 14).",
+    "crumbs": [
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#fonte",
+    "href": "glossary.html#fonte",
+    "title": "Glossary",
+    "section": "Fonte",
+    "text": "Fonte\nTermos extraídos de wiki/documents/smki-interface-design.qmd, smki-coc.qmd, smki-repository-coc.qmd, dcc-user-interface.qmd e gb-companion.qmd — ver cada página de documento para o contexto completo de onde cada termo aparece.",
+    "crumbs": [
+      "Glossary"
+    ]
+  }
+]

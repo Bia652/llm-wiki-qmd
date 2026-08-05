@@ -1,0 +1,69 @@
+---
+title: "Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)"
+type: concept
+categories: [capacity-management, demand-management, smki, duis]
+related:
+  - "smki.qmd"
+  - "../documents/smki-coc.qmd"
+  - "../documents/smki-repository-coc.qmd"
+  - "../documents/dcc-user-interface.qmd"
+last-ingested: 2026-07-27
+status: draft
+confidence-score: 0.55
+supersedes: []
+---
+
+## Síntese
+
+Página cristalizada a partir de uma pergunta `/query` que cruzou os limites de capacidade e
+gestão de procura (rate limits, forecasts, janelas horárias) declarados para as interfaces
+**SMKI** e para o **DCC User Interface (DUIS)**. Não existia nenhuma página que fizesse esta
+comparação — [`concepts/smki.qmd`](smki.qmd) documenta os limites da SMKI mas não os compara com
+o DUIS.
+
+### SMKI Services (Appendix N — [`documents/smki-coc.qmd`](../documents/smki-coc.qmd))
+
+Modelo de **rate limits fixos** por canal:
+
+| Canal | Limite |
+|---|---|
+| Batched CSRs (capacidade total do sistema) | 375.000 CSRs/dia, processados 20:00–08:00; submetidos antes das 20:00 são processados até às 08:00 do dia seguinte |
+| Batched CSRs por Party | acima de 50.000 CSRs/24h requer aviso prévio de 7 dias ao Service Desk |
+| Ad Hoc Device CSRs via DCC Gateway Connection | 150 CSRs/24h por Party sem acordo prévio |
+| Ad Hoc Device CSR Web Service | 1 CSR por 0.8s em horas core (07:00–20:00); 1 CSR por 4s fora desse período |
+| Batched Device CSR Web Service | resposta síncrona obrigatória antes de submeter o Batched CSR seguinte; janelas de acesso ao ficheiro de resposta distintas conforme submissão antes/depois das 20:00 |
+
+### SMKI Repository (Appendix P — [`documents/smki-repository-coc.qmd`](../documents/smki-repository-coc.qmd))
+
+Modelo diferente, baseado em **forecast declarado pelo utilizador**, não em rate limits fixos:
+cada DCC Gateway Connection user declara uma previsão de uso e não deve exceder **120% dessa
+previsão**; a previsão é desagregada por janela horária (Off Peak 00:00–07:00 / Core 07:00–08:00
+/ Non-Core 08:00–20:00–00:00) e por tipo de acesso (Portal, Web Service, SFTP delta/full).
+
+### DCC User Interface / DUIS — lacuna de cobertura
+
+**A wiki não tem, neste momento, valores concretos de capacidade/rate limit para o DUIS.**
+[`documents/dcc-user-interface.qmd`](../documents/dcc-user-interface.qmd) refere a existência de
+uma **Service Request Matrix** (Secção 3.1) e de **Target Response Times** (Secção 3.7) no
+documento original, mas a própria página assinala explicitamente (na sua "Nota de confiança")
+que estas secções não foram lidas exaustivamente na ingestão — não há números capturados. Esta
+página fica como marcador dessa lacuna: para responder com números reais a "qual o rate
+limit/target response time de um Service Request DUIS", é preciso primeiro reforçar a ingestão
+de `documents/dcc-user-interface.qmd` (Secções 3.1 e 3.7).
+
+### Nota sobre a comparação
+
+Não é possível, com a wiki atual, dizer se o DUIS é mais ou menos permissivo que a SMKI em
+termos de capacidade — são modelos de gestão de procura estruturalmente diferentes (rate limits
+fixos vs. forecast percentual), e falta o dado numérico do lado DUIS. Qualquer resposta a essa
+pergunta antes de resolver a lacuna acima seria inferência, não facto da fonte.
+
+## Fonte
+
+Síntese derivada de:
+[`concepts/smki.qmd`](smki.qmd) (síntese já existente dos limites SMKI),
+[`documents/smki-coc.qmd`](../documents/smki-coc.qmd),
+[`documents/smki-repository-coc.qmd`](../documents/smki-repository-coc.qmd),
+[`documents/dcc-user-interface.qmd`](../documents/dcc-user-interface.qmd) (só para confirmar a
+ausência de dados de capacidade extraídos — Secções 3.1/3.7 do documento original ainda não
+ingeridas em detalhe).

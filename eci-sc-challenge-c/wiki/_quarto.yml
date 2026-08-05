@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SEC Wiki (SMKI/DCC)"
+  description: "Wiki do domínio SEC (Smart Energy Code) — Estrutura A: documents/ + concepts/ + glossary.qmd"
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "Documents"
+        contents:
+          auto: "documents"
+      - section: "Concepts"
+        contents:
+          auto: "concepts"
+      - glossary.qmd
+  llms-txt: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false
+
+markdown:
+  wrap: none

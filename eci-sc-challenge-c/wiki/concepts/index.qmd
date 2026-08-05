@@ -1,0 +1,12 @@
+---
+title: "Concepts"
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, categories, status, confidence-score, last-verified, last-ingested]
+  sort: "title"
+---
+
+Páginas de síntese cross-documento por conceito ou entidade do domínio SEC. Cada página agrega
+factos de vários `documents/*.qmd` — ver `related` no front matter de cada página para as fontes
+citadas.

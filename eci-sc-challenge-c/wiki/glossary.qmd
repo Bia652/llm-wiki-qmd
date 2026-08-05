@@ -1,0 +1,111 @@
+---
+title: "Glossary"
+type: glossary
+categories: [glossary]
+last-ingested: 2026-07-27
+status: draft
+confidence-score: 0.85
+supersedes: []
+---
+
+Termos e siglas usados nos documentos desta wiki. Cada entrada indica onde o termo é definido ou
+usado com mais detalhe.
+
+## Siglas gerais
+
+**SEC** — Smart Energy Code. O código regulatório do Reino Unido que rege o mercado de smart
+metering; contém os apêndices/schedules ingeridos nesta wiki (ex.: Appendix M, N, P, AD,
+Schedule 8).
+
+**DCC** — Data Communications Company. Entidade responsável por operar as interfaces e a
+infraestrutura de comunicação entre Users/Parties e os Devices de smart metering.
+
+**RDP** — Registered Data Provider. Ver `documents/smki-coc.qmd`, `documents/smki-repository-coc.qmd`.
+
+**Party** — Organização signatária do SEC (ex.: Supplier, Network Operator) com direitos e
+obrigações definidos no código.
+
+## SMKI (ver [`concepts/smki.qmd`](concepts/smki.qmd))
+
+**SMKI** — Smart Meter Key Infrastructure. PKI do SEC que emite Certificados para Organisations
+e Devices.
+
+**ARO** — Authorised Responsible Officer. Pessoa autorizada a atuar em nome de uma organização
+para operações SMKI (submissão de CSRs, lodging de informação no SMKI Repository).
+
+**CSR** — Certificate Signing Request. Pedido de emissão de Certificado; segue o padrão
+PKCS#10. Ver `documents/smki-interface-design.qmd` (Appendix F).
+
+**IKI** — Infrastructure Key Infrastructure (Certificado/CA usado para autenticação de sessões
+TLS mutuamente autenticadas nas interfaces SMKI). Ver `documents/smki-interface-design.qmd`,
+Appendix H.
+
+**SMKI RAPP** — SMKI Registration Authority Policies and Procedures. Processo referenciado nos
+três apêndices SMKI para emissão de credenciais IKI a AROs; não incluído como PDF nesta wiki.
+
+**Cryptographic Credential Token** — dispositivo físico protegido por PIN que contém o
+Certificado IKI e a chave privada de uma ARO, usado para autenticação ao SMKI Portal.
+
+**Batched CSR** / **Ad Hoc Device CSR** — os dois modos de submissão de CSRs de Device (em lote
+vs. individual/síncrono). Ver `documents/smki-interface-design.qmd`, `documents/smki-coc.qmd`.
+
+**SMKI Repository** — repositório onde são lodged Certificados e outra informação da SMKI,
+distinto das interfaces de emissão de Certificados. Ver `documents/smki-repository-coc.qmd`.
+
+## DUIS / DCC User Interface (ver [`concepts/duis-messaging.qmd`](concepts/duis-messaging.qmd))
+
+**DUIS** — DCC User Interface Specification (SEC Appendix AD). Especifica como Users enviam e
+recebem comunicações do/para o DCC.
+
+**User** — organização (Supplier, Network Operator, etc.) que envia Service Requests ao DCC via
+o DCC User Interface.
+
+**Service Request** — mensagem enviada por um User ao DCC para invocar uma operação sobre um
+Device ou sobre os DCC Systems.
+
+**Command Variant (CV)** — atributo de um Service Request que determina qual Web Service usar e
+o padrão de entrega (síncrono/assíncrono, crítico/não-crítico).
+
+**Pre-Command** — resultado da transformação de um Critical Service Request para formato GBCS,
+devolvido ao User para assinatura digital antes de ser enviado ao Device.
+
+**DCCKI** — DCC Key Infrastructure. Certificados usados para autenticação mútua TLS nas ligações
+ao DCC User Interface (distintos dos Certificados IKI da SMKI).
+
+**KRP / URP** — Known Remote Party / Unknown Remote Party. Classificação de uma organização
+remota consoante as suas credenciais já estarem ou não guardadas num Device. Ver
+`documents/gb-companion.qmd`, Secção 3.
+
+## GBCS (ver [`documents/gb-companion.qmd`](documents/gb-companion.qmd))
+
+**GBCS** — Great Britain Companion Specification (SEC Schedule 8). Especificação técnica das
+Mensagens entre Devices de smart metering e Remote Parties; alinhada com DLMS COSEM e ZSE.
+
+**ESME / GSME** — Electricity / Gas Smart Metering Equipment.
+
+**CHF** — Communications Hub Function; **GPF** — Gas Proxy Function.
+
+**PPMID** — Prepayment Interface Device. **HCALCS** — HAN Connected Auxiliary Load Control
+Switch. **SAPC** — Standalone Auxiliary Proportional Controller. **IHD** — In Home Display
+(Type 2 Device).
+
+**SMHAN** — Smart Metering Home Area Network. Rede local entre Devices na mesma instalação.
+
+**Remote Party Message** — Message cujo emissor ou destinatário final não é um Device (em
+oposição a HAN Only Message, trocada só entre Devices).
+
+**Message Category** — classificação hierárquica de uma Remote Party Message (`SME.C` para
+Commands, `SME.A` para Alerts, com subcategorias Critical/Non-Critical). Ver
+`documents/gb-companion.qmd`, Secção 6.
+
+**ZSE** — ZigBee Smart Energy Profile. **DLMS COSEM** — protocolo de modelação de dados usado
+por ESME/SAPC, alinhado com os DLMS Green/Blue Books.
+
+**UTRN** — Unique Transaction Reference Number, usado nos fluxos de Prepayment Top Up (GBCS
+Secção 14).
+
+## Fonte
+
+Termos extraídos de `wiki/documents/smki-interface-design.qmd`, `smki-coc.qmd`,
+`smki-repository-coc.qmd`, `dcc-user-interface.qmd` e `gb-companion.qmd` — ver cada página de
+documento para o contexto completo de onde cada termo aparece.

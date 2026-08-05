@@ -1,0 +1,18 @@
+# SEC Wiki (SMKI/DCC)
+
+> Wiki do domínio SEC (Smart Energy Code) — Estrutura A: documents/ + concepts/ + glossary.qmd
+
+## Pages
+
+- [SEC Wiki — Smart Energy Code (SMKI / DCC)](index.llms.md)
+- [SMKI Repository Code of Connection (SEC Appendix P)](documents/smki-repository-coc.llms.md)
+- [SMKI Code of Connection (SEC Appendix N)](documents/smki-coc.llms.md)
+- [Great Britain Companion Specification (SEC Schedule 8 / GBCS)](documents/gb-companion.llms.md)
+- [SMKI (Smart Meter Key Infrastructure)](concepts/smki.llms.md)
+- [DUIS — Modelo de Mensagens do DCC User Interface](concepts/duis-messaging.llms.md)
+- [Gestão de Capacidade e Procura (SMKI vs. DCC User Interface)](concepts/capacity-management.llms.md)
+- [Concepts](concepts/index.llms.md)
+- [DCC User Interface Specification (SEC Appendix AD / DUIS)](documents/dcc-user-interface.llms.md)
+- [Documents](documents/index.llms.md)
+- [SMKI Interface Design Specification (SEC Appendix M)](documents/smki-interface-design.llms.md)
+- [Glossary](glossary.llms.md)

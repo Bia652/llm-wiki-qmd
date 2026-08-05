@@ -1,0 +1,11 @@
+---
+title: "Documents"
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, categories, status, confidence-score, last-verified, last-ingested]
+  sort: "title"
+---
+
+Uma página por PDF de origem em `pdfs/`. Cada página inclui metadata, um resumo e um link de
+volta ao artifact original.

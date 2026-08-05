@@ -1,0 +1,59 @@
+# DUIS — Modelo de Mensagens do DCC User Interface
+
+duis
+
+dcc
+
+messaging
+
+gbcs
+
+## Síntese
+
+O modelo de mensagens do **DUIS (DCC User Interface Specification, SEC Appendix AD)** organiza- se em torno de três Web Services e de um conjunto de “Messaging Features” que determinam como cada Service Request é entregue a um Device e como a resposta volta ao User.
+
+### Os três Web Services
+
+| Web Service | Padrão | Uso |
+|----|----|----|
+| **Transform Service** | Síncrono | Critical Service Requests → transformação para formato GBCS, devolve Pre-Command para assinatura digital pelo User (SMETS2+); para SMETS1, devolve um Acknowledgement |
+| **Non-Device Service** | Síncrono | Service Requests que não envolvem comunicação com um Device, ou pedidos de Local Command Service |
+| **Send Command Service** | Assíncrono | Non-Critical Service Requests ou Signed Pre-Commands, para envio de Command ao Device |
+
+Cada User implementa ainda um **Receive Response Service** próprio para receber Service Responses, Device Alerts e DCC Alerts — com Acknowledgement síncrono obrigatório; a ausência de Acknowledgement dispara retry pelo DCC (podendo gerar mensagens duplicadas).
+
+### Command Variant e Messaging Features
+
+Cada Service Request declara um **Command Variant (CV)** que combina: Web Service a usar, padrão de entrega (síncrono/assíncrono), se é “Critical” (requer Pre-Command assinado) e se retorna ao User via SM WAN. As “Messaging Features” que um CV pode expressar são: `Transform`, `On-Demand`, `Non-Device Requests`, `Future Dated Response Pattern` (variante Device — o próprio Device agenda a execução — ou variante DSP — o DCC retém e envia mais tarde), `Meter Scheduled` (o Device mantém um agendamento recorrente), `DCC Scheduled` (o User cria um Schedule no DCC), e os dois canais de mensagens não solicitadas: `Device Alerts` e `DCC Alerts`.
+
+### Modelo de segurança (Access Control, 5 estágios)
+
+Todo Service Request/Signed Pre-Command passa por cinco estágios sequenciais, todos obrigatórios:
+
+1.  **Communications Authentication** — sessão TLS válida com certificado DCCKI.
+2.  **XSD Validation** — conformidade com o DUIS XML Schema.
+3.  **Request Authentication** — assinatura com chave privada de User Role emitida pela SMKI.
+4.  **Request Authorisation** — User é SEC party ativo e o User Role tem direitos sobre o Device visado.
+5.  **Data Validation** — completude/validade dos dados do Service Request.
+
+Isto liga o DUIS diretamente à [SMKI](../concepts/smki.llms.md): a validade das credenciais SMKI (Organisation Certificate, User Role Signing Private Key) é uma pré-condição para qualquer mensagem DUIS ser aceite — mas o DUIS (Appendix AD) e a SMKI (Appendix M/N/P) são especificados em documentos distintos e não devem ser confundidos: a SMKI emite e gere os certificados; o DUIS consome-os para autenticar e autorizar mensagens.
+
+### Relação com a GBCS
+
+O payload que o DUIS transporta como resultado de um Service Request “from Device” — o formato **`GBCSPayload`** referido na Secção 3.5.6 do DUIS — é construído segundo as regras da **[GB Companion Specification (GBCS, SEC Schedule 8)](../documents/gb-companion.llms.md)**: é a GBCS que define a hierarquia de categorias de mensagem (`SME.C`/`SME.A` e subcategorias), a construção Command/Response/Alert e as proteções criptográficas aplicadas a cada Message. O DUIS especifica *como* uma mensagem GBCS chega ao/do DCC (Web Services, Command Variants, Access Control); a GBCS especifica *o que* está dentro dessa mensagem e como o Device a processa. Não duplicar a definição de Message Category aqui — ver a página da GBCS para o detalhe.
+
+### Cadeia de segurança ponta-a-ponta (User → DUIS → GBCS → Device)
+
+Uma mensagem que sai de um User passa por **três mecanismos de credenciais distintos**, não um só — é fácil confundi-los:
+
+1.  **Transporte (DUIS, User↔︎DCC):** sessão TLS mutuamente autenticada com certificados **DCCKI** (DCC Key Infrastructure) — protege a ligação, não a mensagem.
+2.  **Assinatura do Service Request (DUIS, User↔︎DCC):** o Service Request/Signed Pre-Command é assinado com uma **User Role Signing Private Key** emitida sob a **SMKI** (não a DCCKI) — Secção 3.2 “Request Authentication” e 3.3 “DUIS XML Service Request Signing” de `documents/dcc-user-interface.qmd`. O DCC também assina as suas respostas (“DCC Signed Service Responses”). Isto só ocorre depois das 5 fases de Access Control descritas acima.
+3.  **Proteção da Message (GBCS, DCC↔︎Device):** depois de transformada em formato GBCS, aplica-se um conjunto de proteções **independente** do anterior (`documents/gb-companion.qmd`, Secção 4): toda Message tem integridade + autenticidade; Critical Messages acrescentam não-repúdio; certos campos exigem confidencialidade (cifragem). Devices (exceto Type 2) têm o seu próprio par de chave pública/privada e guardam credenciais de Remote Parties conhecidas em **Trust Anchor Cells** — um mecanismo de confiança à parte do TLS/DCCKI e da assinatura SMKI da DUIS. Um **Originator Counter** por organização protege contra replay.
+
+Os Certificados que sustentam os passos 2 e 3 (Organisation Certificates, Device Certificates) são emitidos pela **[SMKI](../concepts/smki.llms.md)**, não pela DUIS nem pela GBCS — ambas os consomem. A **DCCKI** (passo 1) é uma PKI diferente da SMKI/IKI — não confundir as duas.
+
+**Nota de confiança:** a cadeia do lado DUIS (passos 1–2) tem boa cobertura na wiki. Do lado GBCS (passo 3), a existência e categorias de proteção está confirmada, mas `documents/gb-companion.qmd` tem `confidence-score: 0.6` e a Secção 4.3 desse documento (algoritmos criptográficos e parâmetros exatos) não foi lida em detalhe — não é possível, com a wiki atual, confirmar que algoritmo/tamanho de chave a GBCS usa para a cifragem.
+
+## Fonte
+
+Síntese derivada de [`documents/dcc-user-interface.qmd`](../documents/dcc-user-interface.llms.md) (Secções 2.1–2.6, 3.2–3.3) e de [`documents/gb-companion.qmd`](../documents/gb-companion.llms.md) (Secção 3, relação GBCSPayload/Message Category; Secção 4, cadeia de segurança ponta-a-ponta), e de [`concepts/smki.qmd`](../concepts/smki.llms.md) (emissão de Certificados). O catálogo de Service Requests individuais (Secção 3.8 do DUIS) e o detalhe normativo de Message Categories e de algoritmos criptográficos (Secções 4.3/6 da GBCS) não estão cobertos por esta síntese.
